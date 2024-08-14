@@ -2,6 +2,8 @@
 pub fn capture_screen() {}
 #[cfg(target_os = "linux")]
 pub fn capture_screen() {}
+use image::{codecs::{jpeg::{self, JpegEncoder}, png::PngEncoder}, DynamicImage};
+
 #[cfg(target_os = "windows")]
 use crate::error;
 pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
@@ -88,12 +90,15 @@ pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
                 px[3] = 255;
             } 
         }
-        Ok(buffer)
-
-        /*let image = RgbaImage::from_raw(width as u32, height as u32, buffer).expect(
+        let image = RgbaImage::from_raw(width as u32, height as u32, buffer).expect(
             "Error convirtiendo en formato RGBA"
         );
-
-        image.save("Amongas.png").expect("Error guardando"); */
+        let mut new_buffer = vec![0u8; buffer_size as usize];
+        let mut encoder = PngEncoder::new_with_quality(&mut new_buffer, image::codecs::png::CompressionType::Default, image::codecs::png::FilterType::Adaptive);
+        match encoder.write_image(&image.as_raw(), image.dimensions().0, image.dimensions().1, ExtendedColorType::Rgba8) {
+            Ok(_) => {
+                return Ok(new_buffer)},
+            Err(e) => {dbg!(e); return Err(error::GabinatorError::CaptureError("AAAAAAAA".to_string()))},
+        }
     }
 }

@@ -268,7 +268,7 @@ fn find_bulk_endpoint(
         for interface in config.interfaces() {
             for int_descriptors in interface.descriptors() {
                 for endpoint in int_descriptors.endpoint_descriptors() {
-                    if endpoint.direction() == Direction::In
+                    if endpoint.direction() == Direction::Out
                         && endpoint.transfer_type() == TransferType::Bulk
                     {
                         return Some(endpoint {
@@ -291,6 +291,19 @@ pub fn send_capture_data(
     data: Vec<u8>,
     handler: &DeviceHandle<GlobalContext>,
 ) {
+    if (rusb::supports_detach_kernel_driver()){
+        if (handler.kernel_driver_active(0).expect("Error obteniendo estado de drivers")){
+            println!("Kernel Drivers Active");
+            match handler.detach_kernel_driver(0) {
+                Ok(_) => println!("Kernel Drivers Detached"),
+                Err(a) => {dbg!(a); return;},
+            }
+        }
+    }
+    match handler.claim_interface(0) {
+        Ok(_) => println!("Interface claimed"),
+        Err(a) => {dbg!(a); return;},
+    }
     let descriptor = handler.device().device_descriptor().expect("No pudo obtener el descriptor");
     let endpoint_data = match find_bulk_endpoint(&handler, descriptor) {
         Some(a) => a,
@@ -299,11 +312,24 @@ pub fn send_capture_data(
             return;
         }
     };
-
-    if handler
-        .write_bulk(endpoint_data.address, &data, Duration::from_millis(1000))
-        .is_err()
-    {
-        error::GabinatorError::newUSB("Package failed");
+let mut tries = 0;
+   loop {
+    let mut error = false;
+        let result = handler.write_bulk(endpoint_data.address, &data, Duration::from_millis(5000));
+        dbg!(result);
+        if result.is_err(){error = true}
+        //let result = handler.write_bulk(endpoint_data.address, &[0,0,0,0,0,0,0], Duration::from_millis(5000));
+        //if result.is_err(){error = true}
+        if error  {
+            unsafe {
+                Sleep(1000);
+            }
+            dbg!(result);
+            if tries == 5 {
+                error::GabinatorError::newUSB("Package failed");
+                break;
+            }
+            tries += 1;
+        }
     }
 }
