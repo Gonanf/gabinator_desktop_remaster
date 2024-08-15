@@ -2,7 +2,9 @@
 pub fn capture_screen() {}
 #[cfg(target_os = "linux")]
 pub fn capture_screen() {}
-use image::{codecs::{jpeg::{self, JpegEncoder}, png::PngEncoder}, DynamicImage};
+use std::{error::Error, fs::File, io::{BufWriter, Cursor, Write}};
+
+use image::{codecs::{jpeg::{self, JpegEncoder}, png::{PngDecoder, PngEncoder}}, DynamicImage, Rgba};
 
 #[cfg(target_os = "windows")]
 use crate::error;
@@ -74,7 +76,7 @@ pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
         );
 
         //De RGBA a BGRA, esto no se por que pero parece que tanto rust como c++ maneja este formato en vez de RGBA
-        for px in buffer.chunks_exact_mut(4) {
+       for px in buffer.chunks_exact_mut(4) {
             px.swap(0, 2);
 
             //verciones antiguas no soportan RGBA, entonces en esos casos el valor A sera reemplazado
@@ -89,16 +91,16 @@ pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
             {
                 px[3] = 255;
             } 
-        }
+        } 
         let image = RgbaImage::from_raw(width as u32, height as u32, buffer).expect(
             "Error convirtiendo en formato RGBA"
         );
-        let mut new_buffer = vec![0u8; buffer_size as usize];
-        let mut encoder = PngEncoder::new_with_quality(&mut new_buffer, image::codecs::png::CompressionType::Default, image::codecs::png::FilterType::Adaptive);
-        match encoder.write_image(&image.as_raw(), image.dimensions().0, image.dimensions().1, ExtendedColorType::Rgba8) {
-            Ok(_) => {
-                return Ok(new_buffer)},
-            Err(e) => {dbg!(e); return Err(error::GabinatorError::CaptureError("AAAAAAAA".to_string()))},
-        }
+        let mut new_buffer: Vec<u8> = Vec::new();
+        image.write_to(&mut Cursor::new(&mut new_buffer), image::ImageFormat::Png);
+        
+        //TESTS
+        //let mut file = File::create("iconpo.png").unwrap();
+        //file.write_all(&new_buffer);
+        return Ok(new_buffer);
     }
 }
