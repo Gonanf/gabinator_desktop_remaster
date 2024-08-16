@@ -4,7 +4,7 @@ pub fn capture_screen() {}
 pub fn capture_screen() {}
 use std::{error::Error, fs::File, io::{BufWriter, Cursor, Write}};
 
-use image::{codecs::{jpeg::{self, JpegEncoder}, png::{PngDecoder, PngEncoder}}, DynamicImage, Rgba};
+use image::{codecs::{jpeg::{self, JpegEncoder}, png::{PngDecoder, PngEncoder}}, DynamicImage, RgbImage, Rgba};
 
 #[cfg(target_os = "windows")]
 use crate::error;
@@ -80,7 +80,7 @@ pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
             px.swap(0, 2);
 
             //verciones antiguas no soportan RGBA, entonces en esos casos el valor A sera reemplazado
-            if
+            /*if
                 px[3] == 0 &&
                 System::os_version()
                     .map(|os_version| {
@@ -90,14 +90,14 @@ pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
                     .unwrap_or(0) < 8
             {
                 px[3] = 255;
-            } 
+            }  */
         } 
         let image = RgbaImage::from_raw(width as u32, height as u32, buffer).expect(
             "Error convirtiendo en formato RGBA"
         );
         let mut new_buffer: Vec<u8> = Vec::new();
-        image.write_to(&mut Cursor::new(&mut new_buffer), image::ImageFormat::Png);
-        
+        let mut jpeg = JpegEncoder::new_with_quality(&mut new_buffer,10);
+        jpeg.encode_image(&image).unwrap();
         //TESTS
         //let mut file = File::create("iconpo.png").unwrap();
         //file.write_all(&new_buffer);
