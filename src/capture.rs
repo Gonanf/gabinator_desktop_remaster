@@ -26,8 +26,9 @@ use std::{error::Error, fs::File, io::{BufWriter, Cursor, Write}, time::Instant,
 use image::{codecs::{jpeg::{self, JpegEncoder}, png::{PngDecoder, PngEncoder}}, ColorType, DynamicImage, RgbImage, Rgba};
 
 #[cfg(target_os = "windows")]
-use crate::error;
 pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
+use crate::error;
+    
     use std::{ io::Read, mem::size_of, ptr::{ null, null_mut }};
     use image::{ ExtendedColorType, ImageBuffer, ImageEncoder, ImageFormat, Rgb, RgbaImage };
     use sysinfo::System;
