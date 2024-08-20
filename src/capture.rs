@@ -1,45 +1,82 @@
 #[cfg(target_os = "linux")]
 pub fn capture_screen() {
-    use xcb::ffi::xproto::xcb_get_geometry_request_t;
-    let (conn, _) = xcb::Connection::connect(None).unwrap();
-    let screen = conn.get_setup().roots().next().unwrap();
+    use x11rb::{
+        connection::Connection,
+        protocol::xproto::{ ConnectionExt, Drawable, ImageFormat },
+    };
 
-    let pixmap = conn.generate_id();
-    xcb::create_pixmap(&conn, 24, pixmap, screen.root(), screen.width_in_pixels(), screen.height_in_pixels());
+    let (conn, screen_num) = x11rb::connect(None).unwrap();
+    let screen = &conn.setup().roots[screen_num];
 
-    let image = conn.send_request(&x::GetImage {
-        format: x::ImageFormat::ZPixmap,
-        drawable: x::Drawable::Window(screen.root()),
-        x: 0,
-        y: 0,
-        width,
-        height,
-        plane_mask: u32::MAX,});
-    
+    let pixmap = conn.generate_id().unwrap();
+    x11rb::protocol::xproto::create_pixmap(
+        &conn,
+        24,
+        pixmap,
+        screen.root,
+        screen.width_in_pixels,
+        screen.height_in_pixels
+    );
+
+    let image = conn.get_image(
+        ImageFormat::Z_PIXMAP,
+        screen.root,
+        0,
+        0,
+        screen.width_in_pixels,
+        screen.height_in_pixels,
+        u32::MAX
+    );
+
     dbg!(image);
-
-
-    xcb::free_pixmap(&conn, pixmap);
 }
-use std::{error::Error, fs::File, io::{BufWriter, Cursor, Write}, time::Instant, u32};
-
-use image::{codecs::{jpeg::{self, JpegEncoder}, png::{PngDecoder, PngEncoder}}, ColorType, DynamicImage, RgbImage, Rgba};
 
 #[cfg(target_os = "windows")]
-pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
-use crate::error;
-    
-    use std::{ io::Read, mem::size_of, ptr::{ null, null_mut }};
+pub fn capture_screen() -> Result<Vec<u8>, error::GabinatorError> {
+    use crate::error;
+    use std::{ error::Error, fs::File, io::{ BufWriter, Cursor, Write }, time::Instant, u32 };
+
+    use image::{
+        codecs::{ jpeg::{ self, JpegEncoder }, png::{ PngDecoder, PngEncoder } },
+        ColorType,
+        DynamicImage,
+        RgbImage,
+        Rgba,
+    };
+
+    use std::{ io::Read, mem::size_of, ptr::{ null, null_mut } };
     use image::{ ExtendedColorType, ImageBuffer, ImageEncoder, ImageFormat, Rgb, RgbaImage };
     use sysinfo::System;
-    use windows::{core::HRESULT, Win32::{
-        Graphics::Gdi::{
-            BitBlt, CreateCompatibleBitmap, CreateCompatibleDC, GetDC, GetDIBits, SelectObject, SetStretchBltMode, StretchBlt, BITMAPINFO, BITMAPINFOHEADER, BI_RGB, COLORONCOLOR, DIB_RGB_COLORS, SRCCOPY
+    use windows::{
+        core::HRESULT,
+        Win32::{
+            Graphics::Gdi::{
+                BitBlt,
+                CreateCompatibleBitmap,
+                CreateCompatibleDC,
+                GetDC,
+                GetDIBits,
+                SelectObject,
+                SetStretchBltMode,
+                StretchBlt,
+                BITMAPINFO,
+                BITMAPINFOHEADER,
+                BI_RGB,
+                COLORONCOLOR,
+                DIB_RGB_COLORS,
+                SRCCOPY,
+            },
+            UI::WindowsAndMessaging::{
+                GetDesktopWindow,
+                GetSystemMetrics,
+                SM_CXSCREEN,
+                SM_CYSCREEN,
+                SM_XVIRTUALSCREEN,
+                SM_YVIRTUALSCREEN,
+            },
         },
-        UI::WindowsAndMessaging::{ GetDesktopWindow, GetSystemMetrics, SM_CXSCREEN, SM_CYSCREEN, SM_XVIRTUALSCREEN, SM_YVIRTUALSCREEN },
-    }};
+    };
 
-    use crate::error;
     //usando GDI
     //La mayoria de funciones de la api de windows son inseguras
     unsafe {
@@ -65,7 +102,19 @@ use crate::error;
         //Unir el bitmap con la copia de la pantalla  y luego copiar el contenido de la pantalla a la copia
         SelectObject(screen_copy, bitmap);
         SetStretchBltMode(screen_copy, COLORONCOLOR);
-        StretchBlt(screen_copy, 0, 0, width, height, screen, xscreen, yscreen, width, height, SRCCOPY);
+        StretchBlt(
+            screen_copy,
+            0,
+            0,
+            width,
+            height,
+            screen,
+            xscreen,
+            yscreen,
+            width,
+            height,
+            SRCCOPY
+        );
 
         //Crear un buffer que contendra el bitmap del header bitmap
         let buffer_size = width * height * 3; //4 serian los valores R G B A por cada pixel
@@ -100,12 +149,11 @@ use crate::error;
         let swap_time = Instant::now();
 
         //De RGB a BGR, esto no se por que pero parece que tanto rust como c++ maneja este formato en vez de RGBA
-       for px in buffer.chunks_exact_mut(3) {
+        for px in buffer.chunks_exact_mut(3) {
             px.swap(0, 2);
-        } 
-        println!("SWAP: {:.2?}",swap_time.elapsed());
+        }
+        println!("SWAP: {:.2?}", swap_time.elapsed());
 
-        
         let encoding_time = Instant::now();
         let image = RgbImage::from_raw(width as u32, height as u32, buffer).expect(
             "Error convirtiendo en formato RGBA"
@@ -118,8 +166,8 @@ use crate::error;
         //TESTS
         //let mut file = File::create("iconpo.png").unwrap();
         //file.write_all(&new_buffer);
-        println!("ENCODING: {:.2?}",encoding_time.elapsed());
-        println!("TOTAL: {:.2?}",handler_time.elapsed());
+        println!("ENCODING: {:.2?}", encoding_time.elapsed());
+        println!("TOTAL: {:.2?}", handler_time.elapsed());
         return Ok(jpeg.as_ref().to_vec());
     }
 }
