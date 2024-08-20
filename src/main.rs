@@ -1,4 +1,4 @@
-use std::time::Instant;
+use std::{io::{stdin, Read}, time::Instant};
 mod capture;
 mod usb;
 pub mod error;
@@ -7,13 +7,11 @@ use usb::{ capture_and_send, find_compatible_usb, prepare_accesory, send_capture
 use capture::capture_screen;
 
 fn main() {
-    let mut found = false;
-    let mut device: Option<rusb::DeviceHandle<rusb::GlobalContext>> = None;
-    
+    capture_screen();
+    use std::time::Instant;
     //TEST
     //capture_screen();
     loop {
-        let mut tries = 0;
         match find_compatible_usb() {
             Ok(a) => {
                 capture_and_send(&a);
@@ -22,5 +20,6 @@ fn main() {
                 continue;
             }
         }
+        
     }
 }

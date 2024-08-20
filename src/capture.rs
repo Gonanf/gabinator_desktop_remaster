@@ -1,10 +1,29 @@
-#[cfg(target_os = "macos")]
-pub fn capture_screen() {}
 #[cfg(target_os = "linux")]
-pub fn capture_screen() {}
-use std::{error::Error, fs::File, io::{BufWriter, Cursor, Write}};
+pub fn capture_screen() {
+    use xcb::ffi::xproto::xcb_get_geometry_request_t;
+    let (conn, _) = xcb::Connection::connect(None).unwrap();
+    let screen = conn.get_setup().roots().next().unwrap();
 
-use image::{codecs::{jpeg::{self, JpegEncoder}, png::{PngDecoder, PngEncoder}}, DynamicImage, RgbImage, Rgba};
+    let pixmap = conn.generate_id();
+    xcb::create_pixmap(&conn, 24, pixmap, screen.root(), screen.width_in_pixels(), screen.height_in_pixels());
+
+    let image = conn.send_request(&x::GetImage {
+        format: x::ImageFormat::ZPixmap,
+        drawable: x::Drawable::Window(screen.root()),
+        x: 0,
+        y: 0,
+        width,
+        height,
+        plane_mask: u32::MAX,});
+    
+    dbg!(image);
+
+
+    xcb::free_pixmap(&conn, pixmap);
+}
+use std::{error::Error, fs::File, io::{BufWriter, Cursor, Write}, time::Instant, u32};
+
+use image::{codecs::{jpeg::{self, JpegEncoder}, png::{PngDecoder, PngEncoder}}, ColorType, DynamicImage, RgbImage, Rgba};
 
 #[cfg(target_os = "windows")]
 use crate::error;
@@ -23,6 +42,8 @@ pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
     //usando GDI
     //La mayoria de funciones de la api de windows son inseguras
     unsafe {
+        let handler_time = Instant::now();
+
         //Obtener resolucion
         let width = GetSystemMetrics(SM_CXSCREEN);
         let height = GetSystemMetrics(SM_CYSCREEN);
@@ -46,7 +67,7 @@ pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
         StretchBlt(screen_copy, 0, 0, width, height, screen, xscreen, yscreen, width, height, SRCCOPY);
 
         //Crear un buffer que contendra el bitmap del header bitmap
-        let buffer_size = width * height * 4; //4 serian los valores R G B A por cada pixel
+        let buffer_size = width * height * 3; //4 serian los valores R G B A por cada pixel
         let mut buffer = vec![0u8; buffer_size as usize];
 
         //Configuraciones
@@ -56,7 +77,7 @@ pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
                 biWidth: width,
                 biHeight: -height,
                 biPlanes: 1,
-                biBitCount: 32,
+                biBitCount: 24,
                 biSizeImage: buffer_size as u32,
                 biCompression: 0,
                 ..Default::default()
@@ -75,32 +96,29 @@ pub fn capture_screen() -> Result<Vec<u8>,error::GabinatorError> {
             DIB_RGB_COLORS
         );
 
-        //De RGBA a BGRA, esto no se por que pero parece que tanto rust como c++ maneja este formato en vez de RGBA
-       for px in buffer.chunks_exact_mut(4) {
-            px.swap(0, 2);
+        let swap_time = Instant::now();
 
-            //verciones antiguas no soportan RGBA, entonces en esos casos el valor A sera reemplazado
-            /*if
-                px[3] == 0 &&
-                System::os_version()
-                    .map(|os_version| {
-                        let strs: Vec<&str> = os_version.split(' ').collect();
-                        strs[0].parse::<u8>().unwrap_or(0)
-                    })
-                    .unwrap_or(0) < 8
-            {
-                px[3] = 255;
-            }  */
+        //De RGB a BGR, esto no se por que pero parece que tanto rust como c++ maneja este formato en vez de RGBA
+       for px in buffer.chunks_exact_mut(3) {
+            px.swap(0, 2);
         } 
-        let image = RgbaImage::from_raw(width as u32, height as u32, buffer).expect(
+        println!("SWAP: {:.2?}",swap_time.elapsed());
+
+        
+        let encoding_time = Instant::now();
+        let image = RgbImage::from_raw(width as u32, height as u32, buffer).expect(
             "Error convirtiendo en formato RGBA"
         );
-        let mut new_buffer: Vec<u8> = Vec::new();
+        /*let mut new_buffer: Vec<u8> = Vec::new();
         let mut jpeg = JpegEncoder::new_with_quality(&mut new_buffer,10);
-        jpeg.encode_image(&image).unwrap();
+        jpeg.encode(&buffer, width as u32, height as u32, ExtendedColorType::Rgb8).unwrap(); */
+
+        let jpeg = turbojpeg::compress_image(&image, 10, turbojpeg::Subsamp::Sub2x2).unwrap();
         //TESTS
         //let mut file = File::create("iconpo.png").unwrap();
         //file.write_all(&new_buffer);
-        return Ok(new_buffer);
+        println!("ENCODING: {:.2?}",encoding_time.elapsed());
+        println!("TOTAL: {:.2?}",handler_time.elapsed());
+        return Ok(jpeg.as_ref().to_vec());
     }
 }
