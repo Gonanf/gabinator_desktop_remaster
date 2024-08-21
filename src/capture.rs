@@ -20,7 +20,7 @@ pub fn capture_screen() {
 
     let image = conn.get_image(
         ImageFormat::Z_PIXMAP,
-        screen.root,
+        pixmap,
         0,
         0,
         screen.width_in_pixels,
@@ -30,12 +30,11 @@ pub fn capture_screen() {
 
     dbg!(image);
 }
+use crate::error;
 
 #[cfg(target_os = "windows")]
-pub fn capture_screen() -> Result<Vec<u8>, error::GabinatorError> {
-    use crate::error;
+pub fn capture_screen(HTTP_MODE: bool) -> Result<Vec<u8>, error::GabinatorError> {
     use std::{ error::Error, fs::File, io::{ BufWriter, Cursor, Write }, time::Instant, u32 };
-
     use image::{
         codecs::{ jpeg::{ self, JpegEncoder }, png::{ PngDecoder, PngEncoder } },
         ColorType,
@@ -80,7 +79,7 @@ pub fn capture_screen() -> Result<Vec<u8>, error::GabinatorError> {
     //usando GDI
     //La mayoria de funciones de la api de windows son inseguras
     unsafe {
-        let handler_time = Instant::now();
+        //let handler_time = Instant::now();
 
         //Obtener resolucion
         let width = GetSystemMetrics(SM_CXSCREEN);
@@ -146,28 +145,27 @@ pub fn capture_screen() -> Result<Vec<u8>, error::GabinatorError> {
             DIB_RGB_COLORS
         );
 
-        let swap_time = Instant::now();
+        //let swap_time = Instant::now();
 
         //De RGB a BGR, esto no se por que pero parece que tanto rust como c++ maneja este formato en vez de RGBA
-        for px in buffer.chunks_exact_mut(3) {
+        /*for px in buffer.chunks_exact_mut(3) {
             px.swap(0, 2);
-        }
-        println!("SWAP: {:.2?}", swap_time.elapsed());
+        } */
+        //println!("SWAP: {:.2?}", swap_time.elapsed());
 
         let encoding_time = Instant::now();
         let image = RgbImage::from_raw(width as u32, height as u32, buffer).expect(
             "Error convirtiendo en formato RGBA"
         );
-        /*let mut new_buffer: Vec<u8> = Vec::new();
-        let mut jpeg = JpegEncoder::new_with_quality(&mut new_buffer,10);
-        jpeg.encode(&buffer, width as u32, height as u32, ExtendedColorType::Rgb8).unwrap(); */
-
-        let jpeg = turbojpeg::compress_image(&image, 10, turbojpeg::Subsamp::Sub2x2).unwrap();
+        let jpeg = turbojpeg::compress_image(&image, 25, turbojpeg::Subsamp::Sub2x2).unwrap();
         //TESTS
-        //let mut file = File::create("iconpo.png").unwrap();
-        //file.write_all(&new_buffer);
-        println!("ENCODING: {:.2?}", encoding_time.elapsed());
-        println!("TOTAL: {:.2?}", handler_time.elapsed());
+        if HTTP_MODE{
+            let mut file = File::create("temporal_image.jpg").unwrap();
+            file.write_all(&jpeg);
+        }
+        
+        //println!("ENCODING: {:.2?}", encoding_time.elapsed());
+        //println!("TOTAL: {:.2?}", handler_time.elapsed());
         return Ok(jpeg.as_ref().to_vec());
     }
 }

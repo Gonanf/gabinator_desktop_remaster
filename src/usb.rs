@@ -261,8 +261,7 @@ pub fn capture_and_send(handler: &DeviceHandle<GlobalContext>) -> Option<rusb::E
 
     let mut tries = 0;
     loop{
-        let data = capture_screen();
-        let data = match data {
+        let data = match capture_screen(false) {
             Ok(a) => a,
             Err(a) => return Some(rusb::Error::Other),
         };
