@@ -145,27 +145,21 @@ pub fn capture_screen(HTTP_MODE: bool) -> Result<Vec<u8>, error::GabinatorError>
             DIB_RGB_COLORS
         );
 
-        //let swap_time = Instant::now();
 
-        //De RGB a BGR, esto no se por que pero parece que tanto rust como c++ maneja este formato en vez de RGBA
-        /*for px in buffer.chunks_exact_mut(3) {
+        //De RGB a BGR, si no se pone asi, el rojo y el azul se ven intercambiados en la imagen final
+        for px in buffer.chunks_exact_mut(3) {
             px.swap(0, 2);
-        } */
-        //println!("SWAP: {:.2?}", swap_time.elapsed());
+        }
 
         let encoding_time = Instant::now();
         let image = RgbImage::from_raw(width as u32, height as u32, buffer).expect(
             "Error convirtiendo en formato RGBA"
         );
         let jpeg = turbojpeg::compress_image(&image, 25, turbojpeg::Subsamp::Sub2x2).unwrap();
-        //TESTS
         if HTTP_MODE{
             let mut file = File::create("temporal_image.jpg").unwrap();
             file.write_all(&jpeg);
         }
-        
-        //println!("ENCODING: {:.2?}", encoding_time.elapsed());
-        //println!("TOTAL: {:.2?}", handler_time.elapsed());
         return Ok(jpeg.as_ref().to_vec());
     }
 }

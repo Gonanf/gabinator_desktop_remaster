@@ -257,7 +257,6 @@ pub fn capture_and_send(handler: &DeviceHandle<GlobalContext>) -> Option<rusb::E
         Err(a) => return Some(a),
         _ => {}
     }
-    println!("PREPARATION: {:.2?}",preparation_time.elapsed());
 
     let mut tries = 0;
     loop{
@@ -275,7 +274,6 @@ pub fn capture_and_send(handler: &DeviceHandle<GlobalContext>) -> Option<rusb::E
             },
             None => {continue },
         }
-        println!("SENDING: {:.2?}",sending_time.elapsed());
     }
     return None
 
@@ -317,7 +315,6 @@ pub fn send_capture_data(
     handler: &DeviceHandle<GlobalContext>
 ) -> Option<rusb::Error> {
     let descriptor = handler.device().device_descriptor().expect("No pudo obtener el descriptor");
-    let endpoint_time = Instant::now();
     let endpoint_data = match find_bulk_endpoint(&handler, descriptor) {
         Some(a) => a,
         None => {
@@ -325,13 +322,10 @@ pub fn send_capture_data(
             return Some(rusb::Error::NotFound);
         }
     };
-    println!("ENDPOINT: {:.2?}", endpoint_time.elapsed());
-    let write_time = Instant::now();
     let result = handler.write_bulk(endpoint_data.address, &data, Duration::from_millis(5000));
     dbg!(result);
     if result.is_err() {
         return Some(result.unwrap_err());
     }
-    println!("WRITE: {:.2?}",write_time.elapsed());
     return None;
 }
