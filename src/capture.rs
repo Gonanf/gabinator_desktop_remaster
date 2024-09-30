@@ -1,76 +1,136 @@
 #[cfg(target_os = "linux")]
-pub fn capture_screen() {
-    use x11rb::{
-        connection::Connection,
-        protocol::xproto::{ ConnectionExt, Drawable, ImageFormat },
+pub fn capture_screen() -> xcb::Result<Vec<u8>> {
+    use std::u32;
+
+    use image::RgbaImage;
+    use xcb::{
+        randr,
+        x::{self, GetImage, ImageOrder},
+        Connection,
     };
+    let (conn, window_number) = Connection::connect(None)?;
 
-    let (conn, screen_num) = x11rb::connect(None).unwrap();
-    let screen = &conn.setup().roots[screen_num];
+    let setup = conn.get_setup();
+    let mut window = setup.roots();
+    let current_window = window.next().unwrap();
+    let width = current_window.width_in_pixels() as u32;
+    let height = current_window.height_in_pixels() as u32;
 
-    let pixmap = conn.generate_id().unwrap();
-    x11rb::protocol::xproto::create_pixmap(
-        &conn,
-        24,
-        pixmap,
-        screen.root,
-        screen.width_in_pixels,
-        screen.height_in_pixels
-    );
+    dbg!(width);
+    dbg!(height);
+    let cookie_get_image = conn.send_request(&GetImage {
+        format: x::ImageFormat::ZPixmap,
+        drawable: x::Drawable::Window(current_window.root()),
+        x: 0,
+        y: 0,
+        width: width as u16,
+        height: height as u16,
+        plane_mask: u32::MAX,
+    });
+    let image_reply = conn.wait_for_reply(cookie_get_image).unwrap();
+    let data = image_reply.data();
+    let depth = image_reply.depth();
+    let pixmap = setup
+        .pixmap_formats()
+        .iter()
+        .find(|i| i.depth() == depth)
+        .unwrap();
 
-    let image = conn.get_image(
-        ImageFormat::Z_PIXMAP,
-        pixmap,
-        0,
-        0,
-        screen.width_in_pixels,
-        screen.height_in_pixels,
-        u32::MAX
-    );
+    let bits_per_pixel = pixmap.bits_per_pixel();
+    let bit_order = setup.bitmap_format_bit_order();
+    let mut image_data = vec![0u8; (width * height * 4) as usize];
+    for y in 0..height {
+        for x in 0..width {
+            let index = ((y * width + x) * bits_per_pixel as u32 / 8) as usize;
+            let (r, g, b, a) = match depth {
+                8 => {
+                    let pixel = if bit_order == ImageOrder::LsbFirst {
+                        data[index]
+                    } else {
+                        data[index] & 7 << 4 | data[index] >> 4
+                    };
 
-    dbg!(image);
+                    (
+                        ((pixel >> 6) as f32 / 3.0 * 255.0) as u8,
+                        (((pixel >> 2) & 7) as f32 / 7.0 * 255.0) as u8,
+                        ((pixel & 3) as f32 / 3.0 * 255.0) as u8,
+                        255 as u8,
+                    )
+                }
+
+                16 => {
+                    let pixel = if bit_order == ImageOrder::LsbFirst {
+                        data[index] as u16 | (data[index + 1] as u16) << 8
+                    } else {
+                        (data[index] as u16) << 8 | data[index + 1] as u16
+                    };
+
+                    (
+                        ((pixel >> 11) as f32 / 31.0 * 255.0) as u8,
+                        (((pixel >> 5) & 63) as f32 / 63.0 * 255.0) as u8,
+                        ((pixel & 31) as f32 / 31.0 * 255.0) as u8,
+                        255 as u8,
+                    )
+                }
+
+                24 | 32 => {
+                    if bit_order == ImageOrder::LsbFirst {
+                        (data[index + 2], data[index + 1], data[index], 255 as u8)
+                    } else {
+                        (data[index], data[index + 1], data[index + 2], 255 as u8)
+                    }
+                }
+
+                _ => (0 as u8, 0 as u8, 0 as u8, 0 as u8),
+            };
+
+            let local = ((y * width + x) * 4) as usize;
+            image_data[local] = r;
+            image_data[local + 1] = g;
+            image_data[local + 2] = b;
+            image_data[local + 3] = a;
+        }
+    }
+    let image = RgbaImage::from_raw(width.into(), height.into(), image_data.clone()).unwrap();
+    let jpeg = turbojpeg::compress_image(&image, 25, turbojpeg::Subsamp::Sub2x2).unwrap();
+    return Ok(jpeg.as_ref().to_vec());
 }
 use crate::error;
 
 #[cfg(target_os = "windows")]
-pub fn capture_screen(HTTP_MODE: bool) -> Result<Vec<u8>, error::GabinatorError> {
-    use std::{ error::Error, fs::File, io::{ BufWriter, Cursor, Write }, time::Instant, u32 };
+pub fn capture_screen() -> Result<Vec<u8>, error::GabinatorError> {
     use image::{
-        codecs::{ jpeg::{ self, JpegEncoder }, png::{ PngDecoder, PngEncoder } },
-        ColorType,
-        DynamicImage,
-        RgbImage,
-        Rgba,
+        codecs::{
+            jpeg::{self, JpegEncoder},
+            png::{PngDecoder, PngEncoder},
+        },
+        ColorType, DynamicImage, RgbImage, Rgba,
+    };
+    use std::{
+        error::Error,
+        fs::File,
+        io::{BufWriter, Cursor, Write},
+        time::Instant,
+        u32,
     };
 
-    use std::{ io::Read, mem::size_of, ptr::{ null, null_mut } };
-    use image::{ ExtendedColorType, ImageBuffer, ImageEncoder, ImageFormat, Rgb, RgbaImage };
+    use image::{ExtendedColorType, ImageBuffer, ImageEncoder, ImageFormat, Rgb, RgbaImage};
+    use std::{
+        io::Read,
+        mem::size_of,
+        ptr::{null, null_mut},
+    };
     use sysinfo::System;
     use windows::{
         core::HRESULT,
         Win32::{
             Graphics::Gdi::{
-                BitBlt,
-                CreateCompatibleBitmap,
-                CreateCompatibleDC,
-                GetDC,
-                GetDIBits,
-                SelectObject,
-                SetStretchBltMode,
-                StretchBlt,
-                BITMAPINFO,
-                BITMAPINFOHEADER,
-                BI_RGB,
-                COLORONCOLOR,
-                DIB_RGB_COLORS,
-                SRCCOPY,
+                BitBlt, CreateCompatibleBitmap, CreateCompatibleDC, GetDC, GetDIBits, SelectObject,
+                SetStretchBltMode, StretchBlt, BITMAPINFO, BITMAPINFOHEADER, BI_RGB, COLORONCOLOR,
+                DIB_RGB_COLORS, SRCCOPY,
             },
             UI::WindowsAndMessaging::{
-                GetDesktopWindow,
-                GetSystemMetrics,
-                SM_CXSCREEN,
-                SM_CYSCREEN,
-                SM_XVIRTUALSCREEN,
+                GetDesktopWindow, GetSystemMetrics, SM_CXSCREEN, SM_CYSCREEN, SM_XVIRTUALSCREEN,
                 SM_YVIRTUALSCREEN,
             },
         },
@@ -112,7 +172,7 @@ pub fn capture_screen(HTTP_MODE: bool) -> Result<Vec<u8>, error::GabinatorError>
             yscreen,
             width,
             height,
-            SRCCOPY
+            SRCCOPY,
         );
 
         //Crear un buffer que contendra el bitmap del header bitmap
@@ -142,9 +202,8 @@ pub fn capture_screen(HTTP_MODE: bool) -> Result<Vec<u8>, error::GabinatorError>
             height as u32,
             Some(buffer.as_mut_ptr().cast()),
             &mut bitmap_info,
-            DIB_RGB_COLORS
+            DIB_RGB_COLORS,
         );
-
 
         //De RGB a BGR, si no se pone asi, el rojo y el azul se ven intercambiados en la imagen final
         for px in buffer.chunks_exact_mut(3) {
@@ -152,14 +211,9 @@ pub fn capture_screen(HTTP_MODE: bool) -> Result<Vec<u8>, error::GabinatorError>
         }
 
         let encoding_time = Instant::now();
-        let image = RgbImage::from_raw(width as u32, height as u32, buffer).expect(
-            "Error convirtiendo en formato RGBA"
-        );
+        let image = RgbImage::from_raw(width as u32, height as u32, buffer)
+            .expect("Error convirtiendo en formato RGBA");
         let jpeg = turbojpeg::compress_image(&image, 25, turbojpeg::Subsamp::Sub2x2).unwrap();
-        if HTTP_MODE{
-            let mut file = File::create("temporal_image.jpg").unwrap();
-            file.write_all(&jpeg);
-        }
         return Ok(jpeg.as_ref().to_vec());
     }
 }

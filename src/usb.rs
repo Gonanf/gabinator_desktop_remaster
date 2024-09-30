@@ -1,16 +1,16 @@
-use std::{ alloc::GlobalAlloc, fmt::Error, ptr::{ null, null_mut }, time::{Duration, Instant} };
+use std::{
+    alloc::GlobalAlloc,
+    fmt::Error,
+    ptr::{null, null_mut},
+    thread::sleep,
+    time::{Duration, Instant},
+};
 
 use crate::{capture::capture_screen, error};
 use rusb::{
-    self,
-    open_device_with_vid_pid,
-    DeviceDescriptor,
-    DeviceHandle,
-    Direction,
-    GlobalContext,
+    self, open_device_with_vid_pid, DeviceDescriptor, DeviceHandle, Direction, GlobalContext,
     TransferType,
 };
-use windows::Win32::System::Threading::Sleep;
 
 const manufacturer: &str = "Chaos";
 const modelName: &str = "EEST";
@@ -60,16 +60,14 @@ pub fn find_compatible_usb() -> Result<DeviceHandle<rusb::GlobalContext>, error:
 
 fn setup_AOA(
     device: DeviceHandle<rusb::GlobalContext>,
-    descriptor: DeviceDescriptor
+    descriptor: DeviceDescriptor,
 ) -> Result<DeviceHandle<rusb::GlobalContext>, error::GabinatorError> {
     if try_connect_to_AOA(&device, descriptor).is_err() {
         if send_AOA_protocol(&device).is_err() {
             return Err(error::GabinatorError::newUSB("Error sending AOA protocol"));
         }
-        let value: Result<
-            DeviceHandle<GlobalContext>,
-            error::GabinatorError
-        > = try_to_open_AOA_device();
+        let value: Result<DeviceHandle<GlobalContext>, error::GabinatorError> =
+            try_to_open_AOA_device();
         match value {
             Ok(a) => {
                 return Ok(a);
@@ -79,10 +77,8 @@ fn setup_AOA(
             }
         }
     }
-    let value: Result<
-        DeviceHandle<GlobalContext>,
-        error::GabinatorError
-    > = try_to_open_AOA_device();
+    let value: Result<DeviceHandle<GlobalContext>, error::GabinatorError> =
+        try_to_open_AOA_device();
     match value {
         Ok(a) => {
             return Ok(a);
@@ -113,16 +109,14 @@ fn try_to_open_AOA_device() -> Result<DeviceHandle<rusb::GlobalContext>, error::
             None => error::GabinatorError::newUSB("0x18d1:0x2d01 unopenable"),
         };
     }
-    return Err(
-        error::GabinatorError::newUSB(
-            "This is not an AOA device (or at least one that is openable)"
-        )
-    );
+    return Err(error::GabinatorError::newUSB(
+        "This is not an AOA device (or at least one that is openable)",
+    ));
 }
 
 fn try_connect_to_AOA(
     device: &DeviceHandle<rusb::GlobalContext>,
-    descriptor: DeviceDescriptor
+    descriptor: DeviceDescriptor,
 ) -> Result<&DeviceHandle<rusb::GlobalContext>, error::GabinatorError> {
     if descriptor.vendor_id() != 0x18d1 {
         return Err(error::GabinatorError::newUSB("Device is not in AOA mode"));
@@ -135,16 +129,24 @@ fn try_connect_to_AOA(
 }
 
 fn send_AOA_protocol(
-    device: &DeviceHandle<rusb::GlobalContext>
+    device: &DeviceHandle<rusb::GlobalContext>,
 ) -> Result<String, error::GabinatorError> {
     //Si devuelve un error, significa que no es un dispositivo compatible con el modo accesorio (Fuente: https://source.android.com/docs/core/interaction/accessories/aoa?hl=es)
     let mut version_buffer = vec![0u8; 2];
-    if
-        device
-            .read_control(0xc0, 51, 0, 0, &mut version_buffer, Duration::from_millis(100))
-            .is_err()
+    if device
+        .read_control(
+            0xc0,
+            51,
+            0,
+            0,
+            &mut version_buffer,
+            Duration::from_millis(100),
+        )
+        .is_err()
     {
-        return Err(error::GabinatorError::newUSB("Could not read control to device"));
+        return Err(error::GabinatorError::newUSB(
+            "Could not read control to device",
+        ));
     }
 
     //Obtener la version de AOA que soporta el dispositivo
@@ -167,45 +169,86 @@ fn send_AOA_protocol(
 }
 
 fn send_accesory_source_data(
-    device: &DeviceHandle<rusb::GlobalContext>
+    device: &DeviceHandle<rusb::GlobalContext>,
 ) -> Result<String, error::GabinatorError> {
-    if
-        device
-            .write_control(0x40, 52, 0, 0, manufacturer.as_bytes(), Duration::from_millis(100))
-            .is_err()
+    if device
+        .write_control(
+            0x40,
+            52,
+            0,
+            0,
+            manufacturer.as_bytes(),
+            Duration::from_millis(100),
+        )
+        .is_err()
     {
-        return Err(error::GabinatorError::newUSB("Could not send manufacturer data"));
+        return Err(error::GabinatorError::newUSB(
+            "Could not send manufacturer data",
+        ));
     }
-    if
-        device
-            .write_control(0x40, 52, 0, 1, modelName.as_bytes(), Duration::from_millis(100))
-            .is_err()
+    if device
+        .write_control(
+            0x40,
+            52,
+            0,
+            1,
+            modelName.as_bytes(),
+            Duration::from_millis(100),
+        )
+        .is_err()
     {
-        return Err(error::GabinatorError::newUSB("Could not send model name data"));
+        return Err(error::GabinatorError::newUSB(
+            "Could not send model name data",
+        ));
     }
-    if
-        device
-            .write_control(0x40, 52, 0, 2, description.as_bytes(), Duration::from_millis(100))
-            .is_err()
+    if device
+        .write_control(
+            0x40,
+            52,
+            0,
+            2,
+            description.as_bytes(),
+            Duration::from_millis(100),
+        )
+        .is_err()
     {
-        return Err(error::GabinatorError::newUSB("Could not send description data"));
+        return Err(error::GabinatorError::newUSB(
+            "Could not send description data",
+        ));
     }
-    if
-        device
-            .write_control(0x40, 52, 0, 3, version.as_bytes(), Duration::from_millis(100))
-            .is_err()
+    if device
+        .write_control(
+            0x40,
+            52,
+            0,
+            3,
+            version.as_bytes(),
+            Duration::from_millis(100),
+        )
+        .is_err()
     {
         return Err(error::GabinatorError::newUSB("Could not send version data"));
     }
-    if device.write_control(0x40, 52, 0, 4, uri.as_bytes(), Duration::from_millis(100)).is_err() {
+    if device
+        .write_control(0x40, 52, 0, 4, uri.as_bytes(), Duration::from_millis(100))
+        .is_err()
+    {
         return Err(error::GabinatorError::newUSB("Could not send uri data"));
     }
-    if
-        device
-            .write_control(0x40, 52, 0, 5, serialNumber.as_bytes(), Duration::from_millis(100))
-            .is_err()
+    if device
+        .write_control(
+            0x40,
+            52,
+            0,
+            5,
+            serialNumber.as_bytes(),
+            Duration::from_millis(100),
+        )
+        .is_err()
     {
-        return Err(error::GabinatorError::newUSB("Could not send serial number data"));
+        return Err(error::GabinatorError::newUSB(
+            "Could not send serial number data",
+        ));
     }
     Ok("Perfeecto".to_string())
 }
@@ -219,7 +262,7 @@ struct endpoint {
 
 fn find_bulk_endpoint(
     device: &DeviceHandle<GlobalContext>,
-    descriptor: DeviceDescriptor
+    descriptor: DeviceDescriptor,
 ) -> Option<endpoint> {
     for e in 0..descriptor.num_configurations() {
         let config = match device.device().config_descriptor(e) {
@@ -232,9 +275,8 @@ fn find_bulk_endpoint(
         for interface in config.interfaces() {
             for int_descriptors in interface.descriptors() {
                 for endpoint in int_descriptors.endpoint_descriptors() {
-                    if
-                        endpoint.direction() == Direction::Out &&
-                        endpoint.transfer_type() == TransferType::Bulk
+                    if endpoint.direction() == Direction::Out
+                        && endpoint.transfer_type() == TransferType::Bulk
                     {
                         return Some(endpoint {
                             config: endpoint.number(),
@@ -252,36 +294,38 @@ fn find_bulk_endpoint(
 
 pub fn capture_and_send(handler: &DeviceHandle<GlobalContext>) -> Option<rusb::Error> {
     let preparation_time = Instant::now();
-    
-    match prepare_accesory(handler){
+
+    match prepare_accesory(handler) {
         Err(a) => return Some(a),
         _ => {}
     }
 
     let mut tries = 0;
-    loop{
-        let data = match capture_screen(false) {
+    loop {
+        let data = match capture_screen() {
             Ok(a) => a,
             Err(a) => return Some(rusb::Error::Other),
         };
         let sending_time = Instant::now();
         match send_capture_data(&data, handler) {
             Some(a) => {
-                if tries == 5{
+                if tries == 5 {
                     return Some(a);
                 }
-                tries+=1;
-            },
-            None => {continue },
+                tries += 1;
+            }
+            None => continue,
         }
     }
-    return None
-
+    return None;
 }
 
 pub fn prepare_accesory(handler: &DeviceHandle<GlobalContext>) -> Result<endpoint, rusb::Error> {
     if rusb::supports_detach_kernel_driver() {
-        if handler.kernel_driver_active(0).expect("Error obteniendo estado de drivers") {
+        if handler
+            .kernel_driver_active(0)
+            .expect("Error obteniendo estado de drivers")
+        {
             println!("Kernel Drivers Active");
             match handler.detach_kernel_driver(0) {
                 Ok(_) => println!("Kernel Drivers Detached"),
@@ -299,7 +343,10 @@ pub fn prepare_accesory(handler: &DeviceHandle<GlobalContext>) -> Result<endpoin
             return Err(a);
         }
     }
-    let descriptor = handler.device().device_descriptor().expect("No pudo obtener el descriptor");
+    let descriptor = handler
+        .device()
+        .device_descriptor()
+        .expect("No pudo obtener el descriptor");
     let endpoint_data = match find_bulk_endpoint(&handler, descriptor) {
         Some(a) => a,
         None => {
@@ -312,9 +359,12 @@ pub fn prepare_accesory(handler: &DeviceHandle<GlobalContext>) -> Result<endpoin
 
 pub fn send_capture_data(
     data: &Vec<u8>,
-    handler: &DeviceHandle<GlobalContext>
+    handler: &DeviceHandle<GlobalContext>,
 ) -> Option<rusb::Error> {
-    let descriptor = handler.device().device_descriptor().expect("No pudo obtener el descriptor");
+    let descriptor = handler
+        .device()
+        .device_descriptor()
+        .expect("No pudo obtener el descriptor");
     let endpoint_data = match find_bulk_endpoint(&handler, descriptor) {
         Some(a) => a,
         None => {
