@@ -1,16 +1,23 @@
+use core::time;
 use std::{
     alloc::GlobalAlloc,
-    fmt::Error,
+    fmt::{format, Error},
+    ops::Deref,
     ptr::{null, null_mut},
     thread::sleep,
     time::{Duration, Instant},
 };
 
-use crate::{capture::capture_screen, error};
-use rusb::{
-    self, open_device_with_vid_pid, DeviceDescriptor, DeviceHandle, Direction, GlobalContext,
-    TransferType,
+use crate::{
+    capture::capture_screen,
+    error::{self, GabinatorError, GabinatorResult, Logger, LoggerLevel},
 };
+use config::Config;
+use rusb::{
+    self, open_device_with_vid_pid, Device, DeviceDescriptor, DeviceHandle, Direction,
+    GlobalContext, LogLevel, TransferType,
+};
+use xcb::x::Time;
 
 const manufacturer: &str = "Chaos";
 const modelName: &str = "EEST";
@@ -19,119 +26,199 @@ const version: &str = "1.0";
 const uri: &str = "https://github.com/Gonanf/Gabinator_Android/tree/master";
 const serialNumber: &str = "1990";
 
-pub fn find_compatible_usb() -> Result<DeviceHandle<rusb::GlobalContext>, error::GabinatorError> {
+//Finds and returns the AOA Compatible devices
+pub fn find_compatible_usb<'a>(
+    ignore_already_initialized: bool,
+) -> Result<Vec<Device<rusb::GlobalContext>>, error::GabinatorError> {
+    let config = Logger::get_config_content();
     let devices = rusb::devices();
+    let mut compatible_devices: Vec<Device<rusb::GlobalContext>> = Vec::new();
     if devices.is_err() {
-        return Err(error::GabinatorError::newUSB("Failed to get devices"));
+        return Err(error::GabinatorError::newUSB(
+            "Failed to get devices",
+            error::LoggerLevel::Error,
+            Some(config.clone()),
+        ));
     }
     for device in devices.unwrap().iter() {
         let descriptor: rusb::DeviceDescriptor = device.device_descriptor().unwrap();
-        println!(
-            "Bus {:03} Device {:03} ID {:04x}:{:04x}",
-            device.bus_number(),
-            device.address(),
-            descriptor.vendor_id(),
-            descriptor.product_id()
+
+        Logger::log(
+            format!(
+                "Bus {:03} Device {:03} ID {:04x}:{:04x}",
+                device.bus_number(),
+                device.address(),
+                descriptor.vendor_id(),
+                descriptor.product_id()
+            ),
+            LoggerLevel::Info,
+            Some(config.clone()),
         );
 
-        //coloca error
         let device_handle: DeviceHandle<rusb::GlobalContext> = match device.open() {
             Ok(a) => a,
             Err(_) => {
-                error::GabinatorError::newUSB("Could not open this device");
+                error::GabinatorError::newUSB(
+                    "Could not open this device",
+                    error::LoggerLevel::Warning,
+                    Some(config.clone()),
+                );
+                continue;
+            }
+        };
+        let result = is_in_AOA(&device_handle, descriptor);
+        if result.is_some() {
+            if !ignore_already_initialized {
+                compatible_devices.push(device);
                 continue;
             }
         };
 
-        device_handle.set_active_configuration(0);
-        device_handle.set_auto_detach_kernel_driver(true);
-
-        match setup_AOA(device_handle, descriptor) {
-            Ok(a) => {
-                return Ok(a);
-            }
-            Err(_) => {
-                continue;
-            }
+        let result = get_AOA_version(&device_handle);
+        if result.is_ok() {
+            compatible_devices.push(device);
+            continue;
         };
     }
-    Err(error::GabinatorError::newUSB("Fin"))
+    return Ok(compatible_devices);
 }
 
-fn setup_AOA(
-    device: DeviceHandle<rusb::GlobalContext>,
-    descriptor: DeviceDescriptor,
-) -> Result<DeviceHandle<rusb::GlobalContext>, error::GabinatorError> {
-    if try_connect_to_AOA(&device, descriptor).is_err() {
-        if send_AOA_protocol(&device).is_err() {
-            return Err(error::GabinatorError::newUSB("Error sending AOA protocol"));
+pub fn connect_to_device(pid: u16, vid: u16) -> Result<GabinatorResult, GabinatorError> {
+    let config = Logger::get_config_content();
+    let device = match open_device_with_vid_pid(vid, pid) {
+        Some(a) => a,
+        None => {
+            return Err(GabinatorError::newUSB(
+                "Failed to open, maybe device does not exist?",
+                error::LoggerLevel::Error,
+                Some(config.clone()),
+            ))
         }
-        let value: Result<DeviceHandle<GlobalContext>, error::GabinatorError> =
-            try_to_open_AOA_device();
-        match value {
-            Ok(a) => {
-                return Ok(a);
-            }
-            Err(_) => {
-                return Err(error::GabinatorError::newUSB("Did not find a AOA device"));
-            }
-        }
+    };
+
+    match device.set_active_configuration(0) {
+        Ok(a) => a,
+        Err(a) => Logger::log(
+            format!("Failed to set active configuration: {a}"),
+            LoggerLevel::Critical,
+            Some(config.clone()),
+        ),
     }
-    let value: Result<DeviceHandle<GlobalContext>, error::GabinatorError> =
-        try_to_open_AOA_device();
-    match value {
-        Ok(a) => {
-            return Ok(a);
-        }
-        Err(_) => {
-            return Err(error::GabinatorError::newUSB("Could not connect"));
-        }
+
+    match device.set_auto_detach_kernel_driver(true) {
+        Ok(a) => a,
+        Err(a) => Logger::log(
+            format!("Failed to detach kernel driver: {a}"),
+            LoggerLevel::Critical,
+            Some(config.clone()),
+        ),
     }
+
+    /*match device.claim_interface(0) {
+        Ok(a) => a,
+        Err(a) => Logger::log(
+            format!("Failed to claim interface: {a}"),
+            LoggerLevel::Critical,
+            Some(config.clone()),
+        ),
+    } */
+
+    let result = initialize_AOA_device(device);
+    if result.is_err() {
+        GabinatorError::newUSB(
+            format!(
+                "Failed to initialize AOA protocol on this device {}",
+                result.unwrap_err()
+            ),
+            error::LoggerLevel::Error,
+            Some(config.clone()),
+        );
+    }
+    match try_to_open_AOA_device() {
+        Ok(a) => return Ok(GabinatorResult::newUSB("Session succes", Some(config))),
+        Err(a) => {
+            return Err(GabinatorError::newUSB(
+                format!("Failed to open AOA device"),
+                LoggerLevel::Critical,
+                Some(config.clone()),
+            ))
+        }
+    };
 }
 
 fn try_to_open_AOA_device() -> Result<DeviceHandle<rusb::GlobalContext>, error::GabinatorError> {
-    for _i in 0..500 {
+    let config = Logger::get_config_content();
+    for _i in 0..10 {
         let value = open_device_with_vid_pid(0x18d1, 0x2d00);
         match value {
             Some(a) => {
-                dbg!("FOUND AT 0x2d00");
+                Logger::log(
+                    format!("FOUND AT 0x2d00"),
+                    LoggerLevel::Info,
+                    Some(config.clone()),
+                );
                 return Ok(a);
             }
-            None => error::GabinatorError::newUSB("0x18d1:0x2d00 unopenable"),
+            None => error::GabinatorError::newUSB(
+                "0x18d1:0x2d00 unopenable",
+                LoggerLevel::Error,
+                Some(config.clone()),
+            ),
         };
 
         let value = open_device_with_vid_pid(0x18d1, 0x2d01);
         match value {
             Some(a) => {
-                dbg!("FOUND AT 0x2d01");
+                Logger::log(
+                    format!("FOUND AT 0x2d01"),
+                    LoggerLevel::Info,
+                    Some(config.clone()),
+                );
                 return Ok(a);
             }
-            None => error::GabinatorError::newUSB("0x18d1:0x2d01 unopenable"),
+            None => error::GabinatorError::newUSB(
+                "0x18d1:0x2d01 unopenable",
+                LoggerLevel::Error,
+                Some(config.clone()),
+            ),
         };
+        sleep(time::Duration::from_secs(1));
     }
     return Err(error::GabinatorError::newUSB(
         "This is not an AOA device (or at least one that is openable)",
+        LoggerLevel::Error,
+        Some(config),
     ));
 }
 
-fn try_connect_to_AOA(
+fn is_in_AOA(
     device: &DeviceHandle<rusb::GlobalContext>,
     descriptor: DeviceDescriptor,
-) -> Result<&DeviceHandle<rusb::GlobalContext>, error::GabinatorError> {
+) -> Option<error::GabinatorError> {
+    let config = Logger::get_config_content();
     if descriptor.vendor_id() != 0x18d1 {
-        return Err(error::GabinatorError::newUSB("Device is not in AOA mode"));
+        return Some(error::GabinatorError::newUSB(
+            "Device is not in AOA mode",
+            LoggerLevel::Warning,
+            Some(config),
+        ));
     }
     if descriptor.product_id() == 0x2d00 || descriptor.product_id() == 0x2d01 {
-        return Ok(&device);
+        return None;
     }
 
-    Err(error::GabinatorError::newUSB("Device is not an AOA device"))
+    Some(error::GabinatorError::newUSB(
+        "Device is not an AOA device",
+        LoggerLevel::Warning,
+        Some(config),
+    ))
 }
 
-fn send_AOA_protocol(
+fn get_AOA_version(
     device: &DeviceHandle<rusb::GlobalContext>,
-) -> Result<String, error::GabinatorError> {
-    //Si devuelve un error, significa que no es un dispositivo compatible con el modo accesorio (Fuente: https://source.android.com/docs/core/interaction/accessories/aoa?hl=es)
+) -> Result<u8, error::GabinatorError> {
+    let config = Logger::get_config_content();
+
     let mut version_buffer = vec![0u8; 2];
     if device
         .read_control(
@@ -146,111 +233,26 @@ fn send_AOA_protocol(
     {
         return Err(error::GabinatorError::newUSB(
             "Could not read control to device",
+            LoggerLevel::Error,
+            Some(config),
         ));
     }
-
-    //Obtener la version de AOA que soporta el dispositivo
     let version_AOA = (version_buffer[1] << 7) | version_buffer[0];
     if version_AOA > 2 || version_AOA <= 0 {
-        return Err(error::GabinatorError::newUSB("Device does not support AOA"));
+        return Err(error::GabinatorError::newUSB(
+            "Device does not support AOA",
+            LoggerLevel::Warning,
+            Some(config),
+        ));
     }
-    println!("VEARSION: {}", version);
-
-    //TEST: verificando si se puede iniciar sin tener que mandar datos de accesorio
-    //send_accesory_source_data(device);
-
-    match device.write_control(0x40, 53, 0, 0, &[0], Duration::from_millis(100)) {
-        Ok(a) => println!("{}", a),
-        Err(a) => {
-            dbg!(a);
-        }
-    }
-    Ok("All good".to_string())
+    return Ok(version_AOA);
 }
 
-fn send_accesory_source_data(
-    device: &DeviceHandle<rusb::GlobalContext>,
-) -> Result<String, error::GabinatorError> {
-    if device
-        .write_control(
-            0x40,
-            52,
-            0,
-            0,
-            manufacturer.as_bytes(),
-            Duration::from_millis(100),
-        )
-        .is_err()
-    {
-        return Err(error::GabinatorError::newUSB(
-            "Could not send manufacturer data",
-        ));
+fn initialize_AOA_device(device: DeviceHandle<rusb::GlobalContext>) -> Result<usize, rusb::Error> {
+    match device.write_control(0x40, 53, 0, 0, &[0], Duration::from_secs(10)) {
+        Ok(a) => Ok(a),
+        Err(a) => Err(a),
     }
-    if device
-        .write_control(
-            0x40,
-            52,
-            0,
-            1,
-            modelName.as_bytes(),
-            Duration::from_millis(100),
-        )
-        .is_err()
-    {
-        return Err(error::GabinatorError::newUSB(
-            "Could not send model name data",
-        ));
-    }
-    if device
-        .write_control(
-            0x40,
-            52,
-            0,
-            2,
-            description.as_bytes(),
-            Duration::from_millis(100),
-        )
-        .is_err()
-    {
-        return Err(error::GabinatorError::newUSB(
-            "Could not send description data",
-        ));
-    }
-    if device
-        .write_control(
-            0x40,
-            52,
-            0,
-            3,
-            version.as_bytes(),
-            Duration::from_millis(100),
-        )
-        .is_err()
-    {
-        return Err(error::GabinatorError::newUSB("Could not send version data"));
-    }
-    if device
-        .write_control(0x40, 52, 0, 4, uri.as_bytes(), Duration::from_millis(100))
-        .is_err()
-    {
-        return Err(error::GabinatorError::newUSB("Could not send uri data"));
-    }
-    if device
-        .write_control(
-            0x40,
-            52,
-            0,
-            5,
-            serialNumber.as_bytes(),
-            Duration::from_millis(100),
-        )
-        .is_err()
-    {
-        return Err(error::GabinatorError::newUSB(
-            "Could not send serial number data",
-        ));
-    }
-    Ok("Perfeecto".to_string())
 }
 
 struct endpoint {
@@ -293,8 +295,6 @@ fn find_bulk_endpoint(
 }
 
 pub fn capture_and_send(handler: &DeviceHandle<GlobalContext>) -> Option<rusb::Error> {
-    let preparation_time = Instant::now();
-
     match prepare_accesory(handler) {
         Err(a) => return Some(a),
         _ => {}
@@ -321,6 +321,8 @@ pub fn capture_and_send(handler: &DeviceHandle<GlobalContext>) -> Option<rusb::E
 }
 
 pub fn prepare_accesory(handler: &DeviceHandle<GlobalContext>) -> Result<endpoint, rusb::Error> {
+    let config = Logger::get_config_content();
+
     if rusb::supports_detach_kernel_driver() {
         if handler
             .kernel_driver_active(0)
@@ -350,7 +352,11 @@ pub fn prepare_accesory(handler: &DeviceHandle<GlobalContext>) -> Result<endpoin
     let endpoint_data = match find_bulk_endpoint(&handler, descriptor) {
         Some(a) => a,
         None => {
-            error::GabinatorError::newUSB("Cannot find endpoint");
+            error::GabinatorError::newUSB(
+                "Cannot find endpoint",
+                LoggerLevel::Critical,
+                Some(config),
+            );
             return Err(rusb::Error::NotFound);
         }
     };
@@ -368,7 +374,6 @@ pub fn send_capture_data(
     let endpoint_data = match find_bulk_endpoint(&handler, descriptor) {
         Some(a) => a,
         None => {
-            error::GabinatorError::newUSB("Cannot find endpoint");
             return Some(rusb::Error::NotFound);
         }
     };

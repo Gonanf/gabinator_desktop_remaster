@@ -6,12 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-xcb = { version = "*", features = ["randr"] }
 rusb = "0.9.4"
 image = "0.25.1"
 sysinfo = "0.30.13"
 turbojpeg = { version = "1.1.1", features = ["image"] }
 local-ip-address = "0.6.1"
+config = "0.14.0"
+chrono = "0.4.38"
 
 [target.'cfg(target_os = "windows")'.dependencies]
 windows = { version = "0.58.0", features = [
@@ -24,3 +25,6 @@ windows = { version = "0.58.0", features = [
     "Win32_System_ProcessStatus",
     "Win32_Storage_FileSystem",
 ] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+xcb = { version = "*", features = ["randr"] }

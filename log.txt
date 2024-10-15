@@ -1,0 +1,2489 @@
+[2024-10-12T19:51:07.917179885-03:00][Error]Not able to get the config file, this could be an error, aplying defaults... Error: configuration file "/home/chaos/proyectos/gabinator_desktop_remaster/gabinator_config" is not of a registered file format
+[2024-10-12T19:51:07.917306694-03:00][LOG]Found parameter --mode with value nashe
+[2024-10-12T19:51:35.859092649-03:00][Error]Not able to get the config file, this could be an error, aplying defaults... Error: configuration file "gabinator_config" not found
+[2024-10-12T19:51:35.859204294-03:00][LOG]Found parameter --mode with value nashe
+[2024-10-12T19:51:50.315400941-03:00][Error]Not able to get the config file, this could be an error, aplying defaults... Error: configuration file "/home/chaos/proyectos/gabinator_desktop_remaster/gabinator_config.txt" is not of a registered file format
+[2024-10-12T19:51:50.315511991-03:00][LOG]Found parameter --mode with value nashe
+[2024-10-12T19:52:52.362467677-03:00][Error]Not able to get the config file, this could be an error, aplying defaults... Error: configuration file "gabinator_config.txt" not found
+[2024-10-12T19:52:52.362576351-03:00][LOG]Found parameter --mode with value nashe
+[2024-10-12T19:53:24.546692622-03:00][LOG]Found parameter --mode with value nashe
+[2024-10-12T19:53:24.546811869-03:00]PANICKING AS DEFINED IN CONFIG
+[2024-10-12T19:59:15.910458800-03:00][Error]Not able to get the config file, this could be an error, aplying defaults... Error: configuration file "gabinator_config" not found
+[2024-10-12T19:59:15.910606651-03:00][LOG]Found parameter --mode with value nashe
+[2024-10-12T20:11:20.086040785-03:00][Warning]Could not open this device
+[2024-10-12T20:11:20.086146198-03:00][Warning]Could not open this device
+[2024-10-12T20:11:20.086182489-03:00][Warning]Could not open this device
+[2024-10-12T20:11:20.086216572-03:00][Warning]Could not open this device
+
+
+----------------------------------------2024-10-12T20:17:37.040136690-03:00----------------------------------------
+
+
+[2024-10-12T20:17:37.041923930-03:00][Warning]Could not open this device
+[2024-10-12T20:17:37.041968931-03:00][Warning]Could not open this device
+[2024-10-12T20:17:37.042004811-03:00][Warning]Could not open this device
+[2024-10-12T20:17:37.042040473-03:00][Warning]Could not open this device
+
+
+----------------------------------------2024-10-12T20:18:00.463311167-03:00----------------------------------------
+
+
+[2024-10-12T20:18:00.464985496-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-12T20:18:00.465027844-03:00][Warning]Could not open this device
+[2024-10-12T20:18:00.465060656-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-12T20:18:00.465094171-03:00][Warning]Could not open this device
+[2024-10-12T20:18:00.465123788-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-12T20:18:00.465156068-03:00][Warning]Could not open this device
+[2024-10-12T20:18:00.465185296-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-12T20:18:00.465218005-03:00][Warning]Could not open this device
+[2024-10-12T20:18:00.465348844-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T17:54:36.430200444-03:00----------------------------------------
+
+
+[2024-10-15T17:54:36.435846552-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-15T17:54:36.435891526-03:00][Warning]Could not open this device
+[2024-10-15T17:54:36.435923279-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-15T17:54:36.435970875-03:00][Warning]Could not open this device
+[2024-10-15T17:54:36.435996400-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-15T17:54:36.436026916-03:00][Warning]Could not open this device
+[2024-10-15T17:54:36.436053770-03:00][LOG]Bus 001 Device 004 ID 1004:631f
+[2024-10-15T17:54:36.436083603-03:00][Warning]Could not open this device
+[2024-10-15T17:54:36.436110287-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-15T17:54:36.436140007-03:00][Warning]Could not open this device
+[2024-10-15T17:54:36.436257411-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T17:54:40.748303941-03:00----------------------------------------
+
+
+[2024-10-15T17:54:40.750231880-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-15T17:54:40.750271842-03:00][Warning]Could not open this device
+[2024-10-15T17:54:40.750293445-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-15T17:54:40.750328852-03:00][Warning]Could not open this device
+[2024-10-15T17:54:40.750348809-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-15T17:54:40.750368740-03:00][Warning]Could not open this device
+[2024-10-15T17:54:40.750387457-03:00][LOG]Bus 001 Device 004 ID 1004:631f
+[2024-10-15T17:54:40.750407118-03:00][Warning]Could not open this device
+[2024-10-15T17:54:40.750425583-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-15T17:54:40.750445258-03:00][Warning]Could not open this device
+[2024-10-15T17:54:40.750546131-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T18:02:26.886106994-03:00----------------------------------------
+
+
+[2024-10-15T18:02:26.887776713-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-15T18:02:26.887817369-03:00][Warning]Could not open this device
+[2024-10-15T18:02:26.887840843-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-15T18:02:26.887864229-03:00][Warning]Could not open this device
+[2024-10-15T18:02:26.887885306-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-15T18:02:26.887907438-03:00][Warning]Could not open this device
+[2024-10-15T18:02:26.887928126-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-15T18:02:26.887949761-03:00][Warning]Could not open this device
+[2024-10-15T18:02:26.888066877-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T18:02:52.141725727-03:00----------------------------------------
+
+
+[2024-10-15T18:02:52.143846691-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-15T18:02:52.143906569-03:00][Warning]Could not open this device
+[2024-10-15T18:02:52.143931820-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-15T18:02:52.143955492-03:00][Warning]Could not open this device
+[2024-10-15T18:02:52.143976910-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-15T18:02:52.143999336-03:00][Warning]Could not open this device
+[2024-10-15T18:02:52.144020803-03:00][LOG]Bus 001 Device 014 ID 04e8:6860
+[2024-10-15T18:02:52.144207627-03:00][Warning]Device is not in AOA mode
+[2024-10-15T18:02:52.144246632-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-15T18:02:52.144271927-03:00][Warning]Could not open this device
+[2024-10-15T18:02:52.144384952-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T18:11:04.976447097-03:00----------------------------------------
+
+
+[2024-10-15T18:11:04.978468673-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-15T18:11:04.978531281-03:00][Warning]Could not open this device
+[2024-10-15T18:11:04.978556242-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-15T18:11:04.978580216-03:00][Warning]Could not open this device
+[2024-10-15T18:11:04.978602486-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-15T18:11:04.978624931-03:00][Warning]Could not open this device
+[2024-10-15T18:11:04.978645898-03:00][LOG]Bus 001 Device 014 ID 04e8:6860
+[2024-10-15T18:11:04.978845290-03:00][Warning]Device is not in AOA mode
+[2024-10-15T18:11:04.978890671-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-15T18:11:04.978934945-03:00][Warning]Could not open this device
+[2024-10-15T18:11:04.979063605-03:00][LOG]Argument not found --connect
+[2024-10-15T18:11:04.979164874-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T18:11:08.280335996-03:00----------------------------------------
+
+
+[2024-10-15T18:11:08.280635964-03:00][LOG]Argument not found --get-devices
+[2024-10-15T18:11:08.280817603-03:00][LOG]Argument not found --vendor-id
+[2024-10-15T18:11:08.280916962-03:00][LOG]Argument not found --product-id
+[2024-10-15T18:11:08.281018670-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T18:11:33.800785421-03:00----------------------------------------
+
+
+[2024-10-15T18:11:33.801102132-03:00][LOG]Argument not found --get-devices
+[2024-10-15T18:11:33.801310176-03:00][LOG]Found parameter --vendor-id with value 1256
+[2024-10-15T18:11:33.801413566-03:00][LOG]Found parameter --product-id with value 26720
+[2024-10-15T18:11:33.801517233-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T18:11:56.760269318-03:00----------------------------------------
+
+
+[2024-10-15T18:11:56.760569010-03:00][LOG]Argument not found --get-devices
+[2024-10-15T18:11:56.760761194-03:00][LOG]Found parameter --vendor-id with value 1256
+[2024-10-15T18:11:56.760864834-03:00][LOG]Found parameter --product-id with value 26720
+[2024-10-15T18:11:56.760967617-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T18:12:05.448147377-03:00----------------------------------------
+
+
+[2024-10-15T18:12:05.450055929-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-15T18:12:05.450096481-03:00][Warning]Could not open this device
+[2024-10-15T18:12:05.450120511-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-15T18:12:05.450144569-03:00][Warning]Could not open this device
+[2024-10-15T18:12:05.450165925-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-15T18:12:05.450187889-03:00][Warning]Could not open this device
+[2024-10-15T18:12:05.450209395-03:00][LOG]Bus 001 Device 014 ID 04e8:6860
+[2024-10-15T18:12:05.450334991-03:00][Warning]Device is not in AOA mode
+[2024-10-15T18:12:05.450370345-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-15T18:12:05.450395344-03:00][Warning]Could not open this device
+[2024-10-15T18:12:05.450544441-03:00][LOG]Argument not found --connect
+[2024-10-15T18:12:05.450664966-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T18:24:53.742058882-03:00----------------------------------------
+
+
+[2024-10-15T18:24:53.742250196-03:00][LOG]Argument not found --get-devices
+[2024-10-15T18:24:53.742444664-03:00][LOG]Found parameter --vendor-id with value 1256
+[2024-10-15T18:24:53.742553887-03:00][LOG]Found parameter --product-id with value 26720
+[2024-10-15T18:24:53.742665020-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T19:18:21.027010395-03:00----------------------------------------
+
+
+[2024-10-15T19:18:21.027167556-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:18:21.027360150-03:00][LOG]Found parameter --vendor-id with value 1256
+[2024-10-15T19:18:21.027464193-03:00][LOG]Found parameter --product-id with value 26720
+[2024-10-15T19:18:21.129661056-03:00][Error]Failed to initialize AOA protocol on this device
+[2024-10-15T19:18:21.129759456-03:00][Critical]Not able to connect
+[2024-10-15T19:18:21.129790034-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:20:11.017147150-03:00----------------------------------------
+
+
+[2024-10-15T19:20:11.017310842-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:20:11.017501577-03:00][LOG]Found parameter --vendor-id with value 1256
+[2024-10-15T19:20:11.017609333-03:00][LOG]Found parameter --product-id with value 26720
+[2024-10-15T19:20:11.119804313-03:00][Error]Failed to initialize AOA protocol on this device
+[2024-10-15T19:20:11.119884354-03:00][Critical]Not able to connect
+[2024-10-15T19:20:11.119914246-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:22:43.896004396-03:00----------------------------------------
+
+
+[2024-10-15T19:22:43.896157976-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:22:43.896348218-03:00][LOG]Found parameter --vendor-id with value 1256
+[2024-10-15T19:22:43.896450953-03:00][LOG]Found parameter --product-id with value 26720
+[2024-10-15T19:22:43.998654127-03:00][Error]Failed to initialize AOA protocol on this device
+[2024-10-15T19:22:43.998726807-03:00][Critical]Not able to connect
+[2024-10-15T19:22:43.998748429-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:29:06.009428305-03:00----------------------------------------
+
+
+[2024-10-15T19:29:06.011343725-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-15T19:29:06.011426441-03:00][Warning]Could not open this device
+[2024-10-15T19:29:06.011449969-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-15T19:29:06.011471960-03:00][Warning]Could not open this device
+[2024-10-15T19:29:06.011492749-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-15T19:29:06.011513992-03:00][Warning]Could not open this device
+[2024-10-15T19:29:06.011533425-03:00][LOG]Bus 001 Device 021 ID 22b8:2e81
+[2024-10-15T19:29:06.011761068-03:00][Warning]Device is not in AOA mode
+[2024-10-15T19:29:06.011814604-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-15T19:29:06.011840029-03:00][Warning]Could not open this device
+[2024-10-15T19:29:06.011955324-03:00][LOG]Argument not found --connect
+[2024-10-15T19:29:06.012054793-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T19:29:16.513313888-03:00----------------------------------------
+
+
+[2024-10-15T19:29:16.513467423-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:29:16.513655875-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:29:16.513756103-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:29:16.615829788-03:00][Error]Failed to initialize AOA protocol on this device
+[2024-10-15T19:29:16.615917668-03:00][Critical]Not able to connect
+[2024-10-15T19:29:16.615948071-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:30:09.680853126-03:00----------------------------------------
+
+
+[2024-10-15T19:30:09.681006048-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:30:09.681197416-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:30:09.681303863-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:30:09.683248548-03:00][Critical]Failed to claim interface: Invalid parameter
+[2024-10-15T19:30:09.683279554-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:39:49.984820883-03:00----------------------------------------
+
+
+[2024-10-15T19:39:49.984993812-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:39:49.985200603-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:39:49.985309878-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:39:50.023857849-03:00][Error]Failed to initialize AOA protocol on this device
+[2024-10-15T19:39:50.023944724-03:00][Critical]Not able to connect
+[2024-10-15T19:39:50.023975871-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:42:04.262945777-03:00----------------------------------------
+
+
+[2024-10-15T19:42:04.263099908-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:42:04.263284719-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:42:04.263386092-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:42:04.311492081-03:00][Error]Failed to initialize AOA protocol on this device No such device (it may have been disconnected)
+[2024-10-15T19:42:04.311579429-03:00][Critical]Not able to connect
+[2024-10-15T19:42:04.311602338-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:43:28.278907729-03:00----------------------------------------
+
+
+[2024-10-15T19:43:28.279063775-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:43:28.279255305-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:43:28.279364017-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:43:28.281071716-03:00][Error]Failed to open, maybe device does not exist?
+[2024-10-15T19:43:28.281103403-03:00][Critical]Not able to connect
+[2024-10-15T19:43:28.281122993-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:43:47.485279611-03:00----------------------------------------
+
+
+[2024-10-15T19:43:47.487189055-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-15T19:43:47.487249170-03:00][Warning]Could not open this device
+[2024-10-15T19:43:47.487272252-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-15T19:43:47.487302309-03:00][Warning]Could not open this device
+[2024-10-15T19:43:47.487323047-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-15T19:43:47.487343349-03:00][Warning]Could not open this device
+[2024-10-15T19:43:47.487362861-03:00][LOG]Bus 001 Device 035 ID 18d1:2d01
+[2024-10-15T19:43:47.487383386-03:00][Warning]Could not open this device
+[2024-10-15T19:43:47.487402530-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-15T19:43:47.487422579-03:00][Warning]Could not open this device
+[2024-10-15T19:43:47.487612121-03:00][LOG]Argument not found --connect
+[2024-10-15T19:43:47.487718243-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T19:43:59.149625879-03:00----------------------------------------
+
+
+[2024-10-15T19:43:59.151456242-03:00][LOG]Bus 002 Device 001 ID 1d6b:0003
+[2024-10-15T19:43:59.151495049-03:00][Warning]Could not open this device
+[2024-10-15T19:43:59.151518245-03:00][LOG]Bus 001 Device 003 ID 1a2c:4b6a
+[2024-10-15T19:43:59.151540504-03:00][Warning]Could not open this device
+[2024-10-15T19:43:59.151560878-03:00][LOG]Bus 001 Device 002 ID 0458:0186
+[2024-10-15T19:43:59.151582306-03:00][Warning]Could not open this device
+[2024-10-15T19:43:59.151602414-03:00][LOG]Bus 001 Device 036 ID 22b8:2e81
+[2024-10-15T19:43:59.151751666-03:00][Warning]Device is not in AOA mode
+[2024-10-15T19:43:59.151787417-03:00][LOG]Bus 001 Device 001 ID 1d6b:0002
+[2024-10-15T19:43:59.151811607-03:00][Warning]Could not open this device
+[2024-10-15T19:43:59.151923823-03:00][LOG]Argument not found --connect
+[2024-10-15T19:43:59.152028433-03:00][LOG]Argument not found --mode
+
+
+----------------------------------------2024-10-15T19:44:02.501140723-03:00----------------------------------------
+
+
+[2024-10-15T19:44:02.501300393-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:44:02.501507740-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:44:02.501672154-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:44:02.548127317-03:00][Error]Failed to initialize AOA protocol on this device Input/Output Error
+[2024-10-15T19:44:02.548199774-03:00][Critical]Not able to connect
+[2024-10-15T19:44:02.548220882-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:49:30.433295497-03:00----------------------------------------
+
+
+[2024-10-15T19:49:30.433455480-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:49:30.433640052-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:49:30.433739589-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:49:40.436315632-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436368807-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436391928-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436412734-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436433768-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436454043-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436474896-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436495066-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436515600-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436535715-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436555750-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436575711-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436596170-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436616235-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436636352-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436656589-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436677065-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436697542-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436717728-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436738104-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436758272-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436786466-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436807241-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436826224-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436845321-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436864432-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436883622-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436902557-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436921100-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436939885-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436958641-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.436977314-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.436996271-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437015073-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437033689-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437052228-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437071036-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437090200-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437108861-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437127557-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437146320-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437165078-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437184126-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437202814-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437221979-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437240829-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437259996-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437278831-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437297453-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437316216-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437335241-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437353951-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437372519-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437391453-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437410414-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437429477-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437448071-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437466769-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437485859-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437504535-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437523763-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437542839-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437561697-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437580512-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437599257-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437618199-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437636965-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437655534-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437674024-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437693089-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437711735-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437730360-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437749298-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437768297-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437787268-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437805970-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437824794-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437843532-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437862337-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437880878-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437899661-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437921588-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437941944-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437961016-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.437980084-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.437998747-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438017468-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438036419-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438055327-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438073944-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438093033-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438111709-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438130331-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438149284-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438168444-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438187375-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438206367-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438225222-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438243923-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438262592-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438281381-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438300164-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438318724-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438346681-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438366763-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438385596-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438404582-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438423204-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438441819-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438460469-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438479458-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438498186-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438516975-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438535906-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438555085-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438573777-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438592697-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438611409-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438630057-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438648997-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438667776-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438686430-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438705462-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438724150-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438743016-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438761645-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438780398-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438798874-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438817444-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438836041-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438854713-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438873133-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438891790-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438910389-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438929437-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438947968-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.438966675-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.438985304-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439004047-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439022836-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439044223-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439063940-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439082721-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439101748-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439120603-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439139257-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439157965-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439176637-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439195171-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439213760-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439232660-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439251455-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439270385-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439289055-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439307761-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439326280-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439344901-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439363537-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439382129-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439400631-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439419564-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439438091-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439456680-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439475418-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439494183-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439512799-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439531522-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439550291-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439569138-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439587742-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439606501-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439625075-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439643772-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439662546-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439681183-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439699672-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439718573-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439737239-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439756050-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439774706-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439793538-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439812282-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439830894-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439849786-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439868337-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439887365-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439906077-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439924597-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439943275-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439961851-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.439980526-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.439999117-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440017709-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440036353-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440055690-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440074835-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440093648-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440112330-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440131197-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440152251-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440172214-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440190917-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440210093-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440228940-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440248065-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440266805-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440285532-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440304406-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440323325-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440342116-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440361266-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440380173-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440399387-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440418275-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440437143-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440455982-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440474859-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440493651-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440512515-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440531393-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440550330-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440569189-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440588713-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440607930-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440626895-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440645939-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440664738-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440683408-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440702229-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440721295-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440740261-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440759099-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440778362-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440797053-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440816038-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440834623-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440853557-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440872231-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440891174-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440909869-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440928934-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440947772-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.440967078-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.440985826-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441004743-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441023509-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441042197-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441060897-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441079769-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441098473-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441117443-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441136563-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441155494-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441174470-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441193287-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441212016-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441230846-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441249630-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441268865-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441289925-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441310055-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441328957-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441347721-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441366716-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441385622-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441404429-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441423314-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441442248-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441461103-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441479940-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441499408-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441518146-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441537033-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441555791-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441574843-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441593626-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441612441-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441631275-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441650443-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441680157-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441701239-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441720551-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441739544-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441758444-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441777181-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441796140-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441815139-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441834255-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441853130-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441872154-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441891073-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441909839-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441928554-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441947475-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.441966626-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.441985677-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442004513-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442023313-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442042421-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442061432-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442080166-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442098853-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442117803-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442136657-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442155881-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442174695-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442194074-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442213276-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442232234-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442251285-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442270330-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442289211-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442308282-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442326996-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442345971-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442364867-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442383956-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442403014-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442424799-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442444888-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442463807-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442482832-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442502110-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442520986-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442540074-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442558974-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442578110-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442597201-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442616059-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442634948-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442654223-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442673328-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442692413-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442711270-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442730614-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442749849-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442768965-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442788028-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442807194-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442826050-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442844829-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442863615-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442882646-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442901721-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442920588-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442939906-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442958909-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.442977859-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.442996836-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443015688-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443034845-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443053798-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443072705-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443091462-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443110507-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443129411-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443148226-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443167283-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443186248-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443205156-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443224319-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443243371-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443262329-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443281344-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443300400-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443319159-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443338146-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443356999-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443375977-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443394790-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443413690-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443432713-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443451944-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443470920-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443489950-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443508881-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443527847-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443546684-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443568181-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443588080-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443607234-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443626347-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443645471-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443664695-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443683519-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443702350-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443721232-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443740320-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443759124-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443778114-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443797229-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443816359-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443835243-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443854041-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443873047-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443891931-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443910667-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443929643-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443948570-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.443967613-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.443986384-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444005092-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444024230-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444043147-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444061767-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444080491-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444099468-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444118485-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444137395-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444156472-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444175691-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444194859-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444213773-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444232744-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444251905-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444270730-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444289445-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444308480-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444327388-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444346423-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444365674-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444384689-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444403599-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444422461-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444441174-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444460200-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444479105-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444497811-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444516600-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444535283-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444554130-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444572935-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444591709-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444610483-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444629364-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444648325-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444667074-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444688226-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444708382-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444727328-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444746183-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444765102-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444784191-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444803247-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444822001-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444840789-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444859927-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444879133-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444898123-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444917081-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444935929-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444954756-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.444973477-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.444996207-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445022462-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445042780-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445061842-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445080857-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445099685-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445118809-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445137405-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445156296-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445174822-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445193538-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445212120-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445230958-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445249605-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445268502-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445287068-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445305782-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445324377-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445343010-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445361618-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445380436-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445398982-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445418119-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445436881-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445455693-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445474827-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445493622-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445512654-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445531469-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445550113-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445568998-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445587733-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445606582-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445625365-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445644217-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445663021-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445681959-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445700865-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445719591-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445738645-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445757596-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445776536-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445795474-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445816958-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445836953-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445855984-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445874847-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445899279-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445926111-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445946114-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.445965555-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.445984635-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446003477-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446022624-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446041531-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446060278-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446079248-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446098475-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446117507-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446136363-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446155211-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446174080-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446192963-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446212011-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446230865-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446249761-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446268790-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446287889-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446307001-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446326017-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446344842-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446363710-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446382498-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446401387-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446420152-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446439026-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446457758-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446476874-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446496991-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446516139-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446535200-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446553888-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446572657-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446591633-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446610339-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446629431-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446648149-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446666959-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446685779-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446704721-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446723687-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446742602-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446761272-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446780212-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446799117-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446817915-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446836895-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446855751-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446874648-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446893545-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446917204-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.446942049-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.446970307-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447005524-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447038719-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447064207-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447084561-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447103736-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447132930-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447166917-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447198112-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447229369-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447260336-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447290715-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447317666-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447345590-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447366073-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447385469-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447404584-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447423649-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447442637-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447461561-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447480382-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447499137-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447517880-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447536848-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447555691-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447574384-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447593196-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447612136-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447630977-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447649746-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447668470-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447687445-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447706491-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447725589-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447744661-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447763370-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447782530-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447801410-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447820234-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447839293-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447858196-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447877110-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447896181-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447915261-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447943653-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.447966057-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.447985369-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448004621-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448023540-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448042287-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448061112-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448079936-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448099016-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448117898-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448136899-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448155870-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448174709-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448193391-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448212192-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448230845-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448253303-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448273605-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448292723-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448311599-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448341769-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448363849-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448383187-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448401927-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448420717-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448439229-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448458151-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448476665-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448495363-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448513985-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448532574-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448551016-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448569602-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448588195-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448606749-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448625579-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448644424-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448663185-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448681848-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448700347-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448718927-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448737757-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448756367-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448775100-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448794188-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448812961-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448831856-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448850769-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448869507-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448888190-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448906970-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448925486-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448944320-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.448963129-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.448981721-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449000553-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449019441-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449038239-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449056737-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449075444-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449094131-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449112815-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449131317-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449149959-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449168883-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449187557-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449206029-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449224646-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449243582-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449262249-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449280779-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449299544-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449318288-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449337566-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449356444-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449378461-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449398237-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449417090-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449435794-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449454368-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449473302-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449491967-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449510545-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449529045-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449547701-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449566283-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449584839-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449603553-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449622365-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449641194-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449659858-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449678604-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449697557-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449716317-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449735073-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449753636-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449772563-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449791523-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449810267-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449829362-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449848168-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449867214-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449885954-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449904699-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449923493-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449942045-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449960518-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.449979168-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.449997805-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450016455-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450035099-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450053771-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450072313-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450091180-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450109933-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450128673-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450147350-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450166037-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450184602-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450203476-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450222302-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450241296-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450259836-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450278675-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450297292-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450316310-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450334930-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450353986-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450372646-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450391363-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450410119-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450428790-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450447446-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450466212-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450484737-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450505806-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450525345-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450544151-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450562559-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450581303-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450599906-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450618437-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450636946-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450655882-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450674472-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450693415-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450711880-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450730645-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450749246-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450768174-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450786790-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450805475-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450824105-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450842642-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450861125-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450879800-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450898740-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450917750-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450936478-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450955150-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.450973931-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.450992660-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451011384-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451030099-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451048836-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451067479-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451085930-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451104483-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451123266-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451142091-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451160671-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451179609-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451198158-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451216699-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451235191-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451253907-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451273007-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451291636-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451310390-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451329298-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451348066-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451366845-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451385430-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451403858-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451422611-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451441415-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451460362-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451479131-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451497903-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451516576-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451535129-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451554048-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451572672-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451591408-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451613095-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451632653-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451651802-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451677230-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451697083-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451716226-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451735151-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451753983-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451772790-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451791944-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451810902-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451829564-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451848320-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451867150-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451885814-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451904594-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451923373-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451942007-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451961049-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.451980037-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.451998818-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452017783-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452036494-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452055477-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452074292-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452093149-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452111808-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452130395-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452149098-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452168056-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452187025-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452205577-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452224280-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452243097-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452261936-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452280909-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452299603-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452318407-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452337054-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452355878-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452374509-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452393570-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452412194-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452431189-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452449729-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452468498-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452487051-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452506289-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452525097-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452544313-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452562939-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452581806-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452600291-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452618936-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452637506-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452656440-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452675087-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452693766-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452712361-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452734188-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452753775-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452772629-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452791545-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452810366-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452828974-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452847751-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452866394-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452885223-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452904125-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452922927-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452941757-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452960675-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.452979225-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.452998090-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453016777-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453035839-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453054542-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453073361-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453092148-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453111021-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453129494-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453148109-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453166632-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453185632-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453204208-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453223067-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453241769-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453260682-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453279229-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453297867-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453316423-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453335156-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453353718-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453372409-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453391338-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453410601-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453429346-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453448236-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453467054-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453485597-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453504186-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453522647-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453541459-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453560085-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453579120-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453598050-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453616800-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453635604-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453654633-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453673491-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453692508-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453711216-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453729938-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453748642-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453767409-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453785967-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453804468-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453823014-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453842025-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453863114-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453882613-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453901419-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453920067-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453938943-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453957581-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.453976597-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.453995387-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454014138-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454032901-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454051820-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454070422-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454089694-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454108372-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454127043-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454145666-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454164194-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454182884-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454201815-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454220353-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454239224-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454257859-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454276591-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454295107-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454313949-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454332350-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454351103-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454369726-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454388737-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454407442-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454426176-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454444757-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454463504-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454482074-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454500666-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454519230-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454538283-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454557083-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454576066-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454594740-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454613540-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454632292-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454651301-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454670266-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454688987-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454707701-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454726461-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454745196-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454764042-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454782781-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454801556-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454820177-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454838705-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454857348-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454876098-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454895077-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454914089-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454932777-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454951621-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.454972549-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.454995659-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455017706-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455037109-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455056023-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455075073-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455094143-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455113241-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455132036-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455151125-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455170123-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455189140-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455207956-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455227208-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455245976-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455264813-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455283595-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455307429-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455326965-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455345815-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455364742-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455383383-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455402228-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455420897-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455439951-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455458815-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455477630-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455496220-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:49:40.455515026-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:49:40.455532572-03:00][Error]This is not an AOA device (or at least one that is openable)
+[2024-10-15T19:49:40.455550435-03:00][Critical]Failed to open AOA device
+[2024-10-15T19:49:40.455566678-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:51:16.553735784-03:00----------------------------------------
+
+
+[2024-10-15T19:51:16.553894123-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:51:16.554087960-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:51:16.554191224-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:51:16.608514329-03:00][Error]Failed to initialize AOA protocol on this device Input/Output Error
+[2024-10-15T19:51:16.608609724-03:00][Critical]Not able to connect
+[2024-10-15T19:51:16.608641903-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:52:25.142539274-03:00----------------------------------------
+
+
+[2024-10-15T19:52:25.142700468-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:52:25.142895401-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:52:25.143000919-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:52:25.189840476-03:00][Error]Failed to initialize AOA protocol on this device Input/Output Error
+[2024-10-15T19:52:25.190119057-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190149226-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190171587-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190192513-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190213042-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190233852-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190254528-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190275102-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190295343-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190315721-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190335930-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190362944-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190383757-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190402690-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190421882-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190440507-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190459407-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190478536-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190497372-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190516495-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190535777-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190554793-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190573594-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190592532-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190611160-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190629883-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190648879-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190667824-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190761505-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190788182-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190808129-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190827251-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190846298-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190865315-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190884553-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190903617-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190922551-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190941529-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190960524-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.190979336-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.190998444-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191017568-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191036746-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191056207-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191075273-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191094092-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191114319-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191133607-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191152787-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191172003-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191191264-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191210208-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191229072-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191248120-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191267089-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191285997-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191305125-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191324036-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191343290-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191362408-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191381353-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191400570-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191420005-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191439191-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191458184-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191476965-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191496346-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191515574-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191534871-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191553681-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191577420-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191597554-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191616746-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191636171-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191670473-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191691529-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191711083-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191730269-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191749101-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191768354-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191787452-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191806316-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191825268-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191844312-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191863140-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191882054-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191901206-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191920459-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191939259-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191958080-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.191977071-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.191995947-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192014989-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192033668-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192052829-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192071516-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192090632-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192109400-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192128518-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192147506-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192166582-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192185635-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192204649-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192223865-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192243123-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192262086-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192280955-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192299764-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192318640-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192337407-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192356556-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192375459-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192394629-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192413757-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192432887-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192451898-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192470675-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192489730-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192508760-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192527598-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192546550-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192565633-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192584549-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192603642-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192622681-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192641671-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192660871-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192679901-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192698964-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192718327-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192740790-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192760959-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192780653-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192799948-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192820588-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192840156-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192858754-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192877754-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192897062-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192916229-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192935051-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192953809-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.192972837-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.192992394-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193011501-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193030514-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193049547-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193068480-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193087629-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193106445-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193125517-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193144479-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193163261-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193182226-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193201071-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193220402-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193239233-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193258299-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193277229-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193296185-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193315287-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193334631-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193353609-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193372743-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193391836-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193410813-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193429496-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193448396-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193467213-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193486200-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193505345-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193524348-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193543511-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193562342-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193581392-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193600909-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193620024-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193638836-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193657786-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193676490-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193695621-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193714477-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193733333-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193752204-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193771137-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193790179-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193809079-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193828327-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193847805-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193870563-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193890264-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193909180-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193928076-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193946938-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.193965685-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.193984626-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194003726-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194022762-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194041975-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194061090-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194080414-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194099200-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194118394-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194137533-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194156562-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194175774-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194194578-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194213504-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194232228-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194251211-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194270785-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194290082-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194309589-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194329670-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194348451-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194410644-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194445799-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194471937-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194492267-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194511436-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194530759-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194549903-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194569007-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194587659-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194606558-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194625449-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194644408-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194663420-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194682502-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194701210-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194720133-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194738845-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194757700-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194776559-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194795454-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194814171-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194833230-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194852192-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194871064-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194889844-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194908732-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194927535-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194946280-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.194965192-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.194997546-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195018316-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195037430-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195056421-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195079009-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195098736-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195117555-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195136586-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195155273-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195173897-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195192488-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195211057-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195229624-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195248419-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195267151-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195286028-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195304691-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195323743-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195342533-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195361338-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195379884-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195398674-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195417423-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195436-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195454948-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195473521-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195492316-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195511034-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195529654-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195548911-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195567986-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195586598-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195605144-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195623673-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195642215-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195660830-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195679389-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195698063-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195716560-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195735113-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195753611-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195772364-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195791048-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195810024-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195828791-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195847526-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195866155-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195884758-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195903401-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195922151-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195940789-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195959618-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.195978230-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.195996910-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196015450-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196034053-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196053036-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196071987-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196091048-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196109978-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196128698-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196147228-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196165794-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196184335-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196205590-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196225390-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196244440-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196263178-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196281745-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196300817-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196319622-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196338225-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196356706-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196375445-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196394030-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196412755-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196431241-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196450025-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196468613-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196487420-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196505970-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196524701-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196543372-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196561994-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196580620-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196599642-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196618510-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196637403-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196655963-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196674656-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196693145-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196711629-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196730094-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196748806-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196767435-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196785979-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196804587-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196823534-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196842200-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196860633-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196879124-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196897778-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196916319-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196935019-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196953660-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.196972376-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.196991075-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197009588-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197028048-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197046742-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197065375-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197083944-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197102611-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197121575-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197140536-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197159287-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197177932-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197196589-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197215617-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197234253-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197252665-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197271397-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197289987-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197311117-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197330767-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197349662-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197368706-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197387358-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197406018-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197424692-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197443285-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197462294-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197481070-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197499805-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197518542-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197537443-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197556018-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197574784-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197593427-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197612309-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197631471-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197650641-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197669561-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197688301-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197706858-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197725691-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197744324-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197762864-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197781344-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197800058-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197818674-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197837213-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197855781-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197874376-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197892880-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197911712-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197930250-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197948971-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.197967429-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.197986100-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198004531-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198023112-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198041750-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198060270-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198078947-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198097613-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198116494-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198135134-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198153937-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198172881-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198191658-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198210406-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198228926-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198247569-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198266237-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198284681-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198303294-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198331252-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198351390-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198370530-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198389420-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198408395-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198427231-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198448901-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198468752-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198487632-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198506484-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198525439-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198544331-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198563020-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198581874-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198600966-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198619576-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198638414-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198657138-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198676030-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198695076-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198714132-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198733147-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198752391-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198771535-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198790432-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198809454-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198828331-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198847173-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198866069-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198885052-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198904081-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198923243-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198942077-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198961083-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.198979986-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.198998716-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199017146-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199036079-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199054963-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199073812-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199092692-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199111489-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199130235-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199148829-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199167494-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199186217-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199204970-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199224047-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199242907-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199262048-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199281201-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199300310-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199319172-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199338108-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199356958-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199375971-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199394926-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199413977-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199432929-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199452073-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199471043-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199490064-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199508821-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199528012-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199546798-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199568324-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199588512-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199607922-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199626678-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199645554-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199664280-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199683250-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199702115-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199720995-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199739807-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199758798-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199777779-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199797010-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199816030-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199835066-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199853918-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199873067-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199891983-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199910855-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199929494-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199948550-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.199967545-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.199986792-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200005634-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200024586-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200043722-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200062927-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200081810-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200100694-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200119369-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200138519-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200157471-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200176299-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200195017-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200213878-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200232579-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200251466-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200270318-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200289310-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200308420-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200327313-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200346337-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200365414-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200384423-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200403476-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200422163-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200441297-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200460074-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200478635-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200497448-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200516375-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200535359-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200554055-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200573333-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200592272-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200611369-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200630269-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200649421-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200668462-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200689448-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200709110-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200728218-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200747318-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200766218-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200784886-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200803737-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200822614-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200841694-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200860856-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200879755-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200898595-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200917572-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200936184-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200955158-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.200973973-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.200992840-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201011754-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201030756-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201049641-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201068352-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201086873-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201105918-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201124720-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201143860-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201162612-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201181601-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201200440-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201219296-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201238232-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201257289-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201276282-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201295099-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201314023-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201332892-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201351489-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201370421-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201389181-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201408383-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201427116-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201446070-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201464928-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201483918-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201502639-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201521462-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201540388-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201559238-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201578214-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201597359-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201616445-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201635252-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201661507-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201681528-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201700389-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201719414-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201738079-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201757064-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201775919-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201794770-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201813575-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201835085-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201854764-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201873626-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201892515-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201911570-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201930574-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201949273-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.201967988-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.201986448-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202005282-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202023926-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202042355-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202060971-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202079459-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202098032-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202116516-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202135114-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202153628-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202172110-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202190579-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202209203-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202227879-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202246586-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202265157-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202283781-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202302396-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202321212-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202339666-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202358391-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202377119-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202395729-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202414344-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202433216-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202451996-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202470705-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202489268-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202508153-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202526814-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202545441-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202563955-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202582454-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202601224-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202619821-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202638248-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202656770-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202675293-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202693990-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202712537-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202731237-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202749912-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202768428-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202787107-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202805472-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202823985-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202842507-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202861063-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202879842-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202898552-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202917171-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202938150-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202958-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.202977227-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.202996307-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203014999-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203033667-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203052162-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203070777-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203089145-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203107793-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203126498-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203145320-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203164406-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203183156-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203202137-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203225465-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203246629-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203265827-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203284782-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203304022-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203323063-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203342083-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203362303-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203380977-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203399890-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203418932-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203438067-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203460349-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203483057-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203502415-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203521778-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203541202-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203564641-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203584370-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203603343-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203628037-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203647552-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203666466-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203685240-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203704061-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203722712-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203743816-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203763455-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203782725-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203801923-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203820591-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203839206-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203857795-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203880018-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203914674-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203946723-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.203967520-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.203986547-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204005540-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204024603-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204043496-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204062468-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204081469-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204100521-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204123621-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204143427-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204162410-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204181150-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204199850-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204218728-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204237367-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204256287-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204274913-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204293582-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204312192-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204331330-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204350177-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204368866-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204387740-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204406826-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204425513-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204444347-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204463025-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204481705-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204500309-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204519067-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204537672-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204556528-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204575211-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204594012-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204612877-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204632100-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204651054-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204669810-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204688561-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204707299-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204726122-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204744912-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204763552-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204782387-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204801125-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204819793-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204838507-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204857443-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204876184-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204894932-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204913658-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204932659-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.204951351-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.204970291-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205000881-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205021362-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205040174-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205058993-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205077658-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205096343-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205114974-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205133726-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205152389-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205171400-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205190364-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205209289-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205228219-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205247129-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205268502-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205288206-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205307142-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205325901-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205344682-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205363694-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205382498-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205401171-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205419838-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205438697-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205457502-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205476363-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205494984-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205513851-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205532606-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205551311-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205569962-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205588733-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205607504-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205626304-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205645128-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205663950-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205682890-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205702013-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205720879-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205739958-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205758772-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205777463-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205795973-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205814774-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205833449-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205852282-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205870899-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205889868-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205908538-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205927095-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205945574-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.205964024-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.205982523-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206001514-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206020210-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206039056-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206057807-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206076639-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206095245-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206114012-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206132644-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206151426-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206170093-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206189015-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206207675-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206226457-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206245289-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206264241-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206283287-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206302195-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206320718-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206339861-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206358514-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206379715-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206399294-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206418091-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206436700-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206455501-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206474131-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206493057-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206511686-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206530354-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206548980-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206568003-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206586998-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206605801-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206624477-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206643507-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206662157-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206680791-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206699238-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206717909-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206736899-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206756161-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206775175-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206794182-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206812886-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206831817-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206850320-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206869151-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206887940-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206906717-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206925270-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206944249-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.206962984-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.206981605-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207000317-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207019088-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207037546-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207056178-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207075021-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207093687-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207112406-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207131095-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207149773-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207168580-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207187372-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207206350-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207225366-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207244361-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207263036-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207281946-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207300852-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207319845-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207338661-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207367065-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207387093-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207405786-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207424403-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207443226-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207461970-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207480540-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207499172-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207520718-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207540194-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207559039-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207577632-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207596245-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207615011-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207633540-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207652012-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207670737-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207689600-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207708249-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207726837-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207745259-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207763941-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207782515-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207801405-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207820287-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207839354-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207858162-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207876791-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207895343-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207913978-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207932465-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207951248-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.207970026-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.207988706-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208007472-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208026240-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208045149-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208063988-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208082820-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208101555-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208120223-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208138714-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208157557-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208176328-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208195121-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208214070-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208232821-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208251533-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208270032-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208288517-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208307175-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208337783-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208358472-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208377707-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208396713-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208415452-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208440949-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208460558-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208479334-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208497937-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208516438-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208534824-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208553323-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208571731-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208590386-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208609127-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208627511-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208648498-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208667847-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208686448-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208705051-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208723460-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208742032-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208760450-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208779194-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208798035-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208816573-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208835205-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208853983-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208872950-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208891980-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208911249-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208930363-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208949336-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.208968077-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.208987166-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209005925-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209024589-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209043256-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209062038-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209080913-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209099958-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209118854-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209137839-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209156628-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209175443-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209194119-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209212934-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209231676-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209250452-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209269078-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209287916-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209306800-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209325836-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209344527-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:52:25.209363320-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:52:25.209380901-03:00][Error]This is not an AOA device (or at least one that is openable)
+[2024-10-15T19:52:25.209399020-03:00][Critical]Failed to open AOA device
+[2024-10-15T19:52:25.209415335-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T19:54:31.974186301-03:00----------------------------------------
+
+
+[2024-10-15T19:54:31.974342830-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:54:31.974534911-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:54:31.974638194-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:54:32.022384972-03:00][Error]Failed to initialize AOA protocol on this device Input/Output Error
+[2024-10-15T19:54:32.022633150-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:32.022663379-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:33.022755646-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:33.022839705-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:34.022940715-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:34.023023704-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:35.023119444-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:35.023210576-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:36.023306790-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:36.023395006-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:37.023497185-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:37.023578496-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:38.023678855-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:38.023760829-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:39.023854844-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:39.023943902-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:40.024036532-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:40.024120910-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:41.024225270-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:41.024303218-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:42.024398133-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:42.024478561-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:43.024580208-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:43.024667730-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:44.024764805-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:44.024849789-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:45.024944263-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:45.025029147-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:46.025124695-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:46.025208431-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:47.025302139-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:47.025386578-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:48.025480046-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:48.025589753-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:49.025685441-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:49.025772499-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:50.025869186-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:50.025953700-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:51.026054793-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:51.026137240-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:52.026231833-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:52.026316434-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:53.026418311-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:53.026503667-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:54.026606425-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:54.026691960-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:55.026786753-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:55.026875039-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:56.026969589-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:56.027088271-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:57.027287569-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:57.027382838-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:58.027478207-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:58.027563865-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:54:59.027658391-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:54:59.027743885-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:00.027838423-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:00.027926019-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:01.028020109-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:01.028105341-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:02.028203570-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:02.028287880-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:03.028389402-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:03.028474849-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:04.028569292-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:04.028653038-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:05.028747252-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:05.028831632-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:06.028931590-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:06.029023210-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:07.029116071-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:07.029199576-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:08.029291975-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:08.029375889-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:09.029468342-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:09.029554644-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:10.029647230-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:10.029732031-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:11.029827520-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:11.029920933-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:12.030023915-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:12.030120954-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:13.030218007-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:13.030316713-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:14.030416878-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:14.030507008-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:15.030602766-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:15.030695344-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:16.030794391-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:16.030879508-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:17.030979896-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:17.031095350-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:18.031200325-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:18.031286204-03:00][Error]0x18d1:0x2d01 unopenable
+
+
+----------------------------------------2024-10-15T19:55:37.068959527-03:00----------------------------------------
+
+
+[2024-10-15T19:55:37.069109629-03:00][LOG]Argument not found --get-devices
+[2024-10-15T19:55:37.069293284-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T19:55:37.069393042-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T19:55:37.106342450-03:00][Error]Failed to initialize AOA protocol on this device No such device (it may have been disconnected)
+[2024-10-15T19:55:37.106608651-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:37.106639810-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:38.106733051-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:38.106815114-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:39.106917749-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:39.107000144-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:40.107111611-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:40.107193520-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:41.107294261-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:41.107379070-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:42.107476303-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:42.107564653-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:43.114897531-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:43.114987540-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:44.115084851-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:44.115168410-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:45.115263390-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:45.115345180-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:46.115506630-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T19:55:46.115590223-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T19:55:47.115674484-03:00][Error]This is not an AOA device (or at least one that is openable)
+[2024-10-15T19:55:47.115755928-03:00][Critical]Failed to open AOA device
+[2024-10-15T19:55:47.123056365-03:00]PANICKING AS DEFINED IN CONFIG
