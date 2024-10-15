@@ -2487,3 +2487,49 @@
 [2024-10-15T19:55:47.115674484-03:00][Error]This is not an AOA device (or at least one that is openable)
 [2024-10-15T19:55:47.115755928-03:00][Critical]Failed to open AOA device
 [2024-10-15T19:55:47.123056365-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T20:05:33.964284916-03:00----------------------------------------
+
+
+[2024-10-15T20:05:33.964450804-03:00][LOG]Argument not found --get-devices
+[2024-10-15T20:05:33.964652313-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T20:05:33.964771680-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T20:05:33.966455738-03:00][Critical]Failed to set active configuration: Resource busy
+[2024-10-15T20:05:33.966485307-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T20:05:39.620711569-03:00----------------------------------------
+
+
+[2024-10-15T20:05:39.620935511-03:00][LOG]Argument not found --get-devices
+[2024-10-15T20:05:39.621201303-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T20:05:39.621340088-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T20:05:39.623503420-03:00][Critical]Failed to set active configuration: Resource busy
+[2024-10-15T20:05:39.623573460-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T20:05:59.899331368-03:00----------------------------------------
+
+
+[2024-10-15T20:05:59.899485331-03:00][LOG]Argument not found --get-devices
+[2024-10-15T20:05:59.899669914-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T20:05:59.899771547-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T20:05:59.901610721-03:00][Critical]Failed to set active configuration: Resource busy
+[2024-10-15T20:05:59.901657809-03:00]PANICKING AS DEFINED IN CONFIG
+
+
+----------------------------------------2024-10-15T20:06:53.834505491-03:00----------------------------------------
+
+
+[2024-10-15T20:06:53.834662562-03:00][LOG]Argument not found --get-devices
+[2024-10-15T20:06:53.834855358-03:00][LOG]Found parameter --vendor-id with value 8888
+[2024-10-15T20:06:53.834982656-03:00][LOG]Found parameter --product-id with value 11905
+[2024-10-15T20:06:53.874836590-03:00][Error]Failed to initialize AOA protocol on this device Input/Output Error
+[2024-10-15T20:06:53.875111130-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T20:06:53.875142778-03:00][Error]0x18d1:0x2d01 unopenable
+[2024-10-15T20:06:54.875236895-03:00][Error]0x18d1:0x2d00 unopenable
+[2024-10-15T20:06:54.875336820-03:00][LOG]FOUND AT 0x2d01
+[2024-10-15T20:06:54.875363675-03:00][Result]Session succes
+[2024-10-15T20:06:54.875393658-03:00][LOG]Connected
+[2024-10-15T20:06:54.875562959-03:00][LOG]Argument not found --mode
