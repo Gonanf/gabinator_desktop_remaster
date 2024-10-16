@@ -45,6 +45,7 @@ impl Logger {
             ("on_warning".to_string(), "warn".to_string()),
             ("on_result".to_string(), "warn".to_string()),
             ("on_error".to_string(), "warn".to_string()),
+            ("on_debug".to_string(), "debug".to_string()),
             ("on_critical".to_string(), "panic".to_string()),
             ("IP".to_string(), "127.0.0.1".to_string()),
             ("port".to_string(), "3000".to_string()),

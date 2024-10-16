@@ -15,7 +15,6 @@ use usb::{capture_and_send, find_compatible_usb, prepare_accesory, send_capture_
 mod tcp;
 fn main() {
     let config = Logger::get_config_content();
-
     //TEST
     //capture_screen();
     Logger::start_new_page();
@@ -46,6 +45,7 @@ fn main() {
         },
     );
 
+    //Connect to the device
     parse_arg(
         &args,
         "-C".to_string(),
@@ -120,6 +120,18 @@ fn main() {
                 }
             }
             true
+        },
+    );
+
+    //Setup mode (USB or TCP)
+    parse_arg(
+        &args,
+        "-M".to_string(),
+        "--mode".to_string(),
+        true,
+        |a: &String| -> bool {
+            print!("{}", a);
+            return true;
         },
     );
 

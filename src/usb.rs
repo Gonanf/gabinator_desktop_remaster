@@ -4,6 +4,8 @@ use std::{
     fmt::{format, Error},
     ops::Deref,
     ptr::{null, null_mut},
+    sync::atomic::{AtomicBool, Ordering},
+    sync::Arc,
     thread::sleep,
     time::{Duration, Instant},
 };
@@ -134,8 +136,8 @@ pub fn connect_to_device(pid: u16, vid: u16) -> Result<GabinatorResult, Gabinato
             Some(config.clone()),
         );
     }
-    match try_to_open_AOA_device() {
-        Ok(a) => return Ok(GabinatorResult::newUSB("Session succes", Some(config))),
+    let device = match try_to_open_AOA_device() {
+        Ok(a) => a,
         Err(a) => {
             return Err(GabinatorError::newUSB(
                 format!("Failed to open AOA device"),
@@ -144,6 +146,73 @@ pub fn connect_to_device(pid: u16, vid: u16) -> Result<GabinatorResult, Gabinato
             ))
         }
     };
+    let running = Arc::new(AtomicBool::new(true));
+    let copy = running.clone();
+    let config_copy = config.clone();
+    match device.claim_interface(0) {
+        Ok(a) => a,
+        Err(a) => {
+            GabinatorError::newUSB(
+                format!("Cannot claim interface {a}"),
+                LoggerLevel::Error,
+                Some(config.clone()),
+            );
+        }
+    }
+
+    //set control + c thread and behaviour
+    ctrlc::set_handler(move || {
+        println!("Closing device...");
+        match device.unconfigure() {
+            Ok(a) => {
+                Logger::log(format!("Device reconfigured"), LoggerLevel::Debug, None);
+            }
+            Err(a) => {
+                GabinatorError::newUSB(
+                    format!("Cannot unconfigure the device, the device needs to be disconnected phisicaly: {a}"),
+                    LoggerLevel::Error,
+                    Some(config_copy.clone()),
+                );
+            }
+        };
+
+        match device.release_interface(0) {
+            Ok(a) => {
+                Logger::log(format!("Device released"), LoggerLevel::Debug, None);
+            }
+            Err(a) => {
+                GabinatorError::newUSB(
+                    format!("Cannot release the device, the device needs to be disconnected phisicaly: {a}"),
+                    LoggerLevel::Error,
+                    Some(config_copy.clone()),
+                );
+            }
+        };
+
+        match device.reset() {
+            Ok(a) => {
+                Logger::log(format!("Device reseted"), LoggerLevel::Debug, None);
+            }
+            Err(a) => {
+                GabinatorError::newUSB(
+                    format!("Cannot reset the device, the device needs to be disconnected phisicaly: {a}"),
+                    LoggerLevel::Error,
+                    Some(config_copy.clone()),
+                );
+            }
+        };
+
+        copy.store(false, Ordering::SeqCst);
+        return;
+    }).expect("ERRROR CTRLC");
+
+    find_bulk_endpoint(&device);
+
+    while running.load(Ordering::SeqCst) {}
+    return Ok(GabinatorResult::newUSB(
+        "Session succes",
+        Some(config.clone()),
+    ));
 }
 
 fn try_to_open_AOA_device() -> Result<DeviceHandle<rusb::GlobalContext>, error::GabinatorError> {
@@ -262,10 +331,8 @@ struct endpoint {
     address: u8,
 }
 
-fn find_bulk_endpoint(
-    device: &DeviceHandle<GlobalContext>,
-    descriptor: DeviceDescriptor,
-) -> Option<endpoint> {
+fn find_bulk_endpoint(device: &DeviceHandle<GlobalContext>) -> Option<endpoint> {
+    let descriptor = device.device().device_descriptor().unwrap();
     for e in 0..descriptor.num_configurations() {
         let config = match device.device().config_descriptor(e) {
             Ok(a) => a,
@@ -294,30 +361,15 @@ fn find_bulk_endpoint(
     None
 }
 
-pub fn capture_and_send(handler: &DeviceHandle<GlobalContext>) -> Option<rusb::Error> {
-    match prepare_accesory(handler) {
-        Err(a) => return Some(a),
-        _ => {}
-    }
-
-    let mut tries = 0;
-    loop {
-        let data = match capture_screen() {
-            Ok(a) => a,
-            Err(a) => return Some(rusb::Error::Other),
-        };
-        let sending_time = Instant::now();
-        match send_capture_data(&data, handler) {
-            Some(a) => {
-                if tries == 5 {
-                    return Some(a);
-                }
-                tries += 1;
-            }
-            None => continue,
-        }
-    }
-    return None;
+pub fn capture_and_send(
+    handler: &DeviceHandle<GlobalContext>,
+    endpoint_data: u8,
+) -> Option<rusb::Error> {
+    let data = match capture_screen() {
+        Ok(a) => a,
+        Err(a) => return Some(rusb::Error::Other),
+    };
+    send_USB_data(&data, handler, endpoint_data)
 }
 
 pub fn prepare_accesory(handler: &DeviceHandle<GlobalContext>) -> Result<endpoint, rusb::Error> {
@@ -363,22 +415,12 @@ pub fn prepare_accesory(handler: &DeviceHandle<GlobalContext>) -> Result<endpoin
     return Ok(endpoint_data);
 }
 
-pub fn send_capture_data(
+pub fn send_USB_data(
     data: &Vec<u8>,
     handler: &DeviceHandle<GlobalContext>,
+    endpoint_data: u8,
 ) -> Option<rusb::Error> {
-    let descriptor = handler
-        .device()
-        .device_descriptor()
-        .expect("No pudo obtener el descriptor");
-    let endpoint_data = match find_bulk_endpoint(&handler, descriptor) {
-        Some(a) => a,
-        None => {
-            return Some(rusb::Error::NotFound);
-        }
-    };
-    let result = handler.write_bulk(endpoint_data.address, &data, Duration::from_millis(5000));
-    dbg!(result);
+    let result = handler.write_bulk(endpoint_data, &data, Duration::from_millis(5000));
     if result.is_err() {
         return Some(result.unwrap_err());
     }
