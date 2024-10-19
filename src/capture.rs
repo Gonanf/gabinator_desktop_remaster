@@ -16,8 +16,6 @@ pub fn capture_screen() -> xcb::Result<Vec<u8>> {
     let width = current_window.width_in_pixels() as u32;
     let height = current_window.height_in_pixels() as u32;
 
-    dbg!(width);
-    dbg!(height);
     let cookie_get_image = conn.send_request(&GetImage {
         format: x::ImageFormat::ZPixmap,
         drawable: x::Drawable::Window(current_window.root()),

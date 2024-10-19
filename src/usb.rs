@@ -4,8 +4,10 @@ use std::{
     fmt::{format, Error},
     ops::Deref,
     ptr::{null, null_mut},
-    sync::atomic::{AtomicBool, Ordering},
-    sync::Arc,
+    sync::{
+        atomic::{AtomicBool, Ordering},
+        Arc, Mutex,
+    },
     thread::sleep,
     time::{Duration, Instant},
 };
@@ -19,14 +21,6 @@ use rusb::{
     self, open_device_with_vid_pid, Device, DeviceDescriptor, DeviceHandle, Direction,
     GlobalContext, LogLevel, TransferType,
 };
-use xcb::x::Time;
-
-const manufacturer: &str = "Chaos";
-const modelName: &str = "EEST";
-const description: &str = "Gabinator";
-const version: &str = "1.0";
-const uri: &str = "https://github.com/Gonanf/Gabinator_Android/tree/master";
-const serialNumber: &str = "1990";
 
 //Finds and returns the AOA Compatible devices
 pub fn find_compatible_usb<'a>(
@@ -98,28 +92,10 @@ pub fn connect_to_device(pid: u16, vid: u16) -> Result<GabinatorResult, Gabinato
         }
     };
 
-    match device.set_active_configuration(0) {
-        Ok(a) => a,
-        Err(a) => Logger::log(
-            format!("Failed to set active configuration: {a}"),
-            LoggerLevel::Critical,
-            Some(config.clone()),
-        ),
-    }
-
-    match device.set_auto_detach_kernel_driver(true) {
+    /*match device.set_auto_detach_kernel_driver(true) {
         Ok(a) => a,
         Err(a) => Logger::log(
             format!("Failed to detach kernel driver: {a}"),
-            LoggerLevel::Critical,
-            Some(config.clone()),
-        ),
-    }
-
-    /*match device.claim_interface(0) {
-        Ok(a) => a,
-        Err(a) => Logger::log(
-            format!("Failed to claim interface: {a}"),
             LoggerLevel::Critical,
             Some(config.clone()),
         ),
@@ -146,48 +122,19 @@ pub fn connect_to_device(pid: u16, vid: u16) -> Result<GabinatorResult, Gabinato
             ))
         }
     };
+    let stop_signal = Arc::new(AtomicBool::new(true));
+    let copy_stop = stop_signal.clone();
     let running = Arc::new(AtomicBool::new(true));
     let copy = running.clone();
     let config_copy = config.clone();
-    match device.claim_interface(0) {
-        Ok(a) => a,
-        Err(a) => {
-            GabinatorError::newUSB(
-                format!("Cannot claim interface {a}"),
-                LoggerLevel::Error,
-                Some(config.clone()),
-            );
-        }
-    }
 
     //set control + c thread and behaviour
+    let clone_device = Arc::new(Mutex::new(device));
+    let clousure = Arc::clone(&clone_device);
     ctrlc::set_handler(move || {
         println!("Closing device...");
-        match device.unconfigure() {
-            Ok(a) => {
-                Logger::log(format!("Device reconfigured"), LoggerLevel::Debug, None);
-            }
-            Err(a) => {
-                GabinatorError::newUSB(
-                    format!("Cannot unconfigure the device, the device needs to be disconnected phisicaly: {a}"),
-                    LoggerLevel::Error,
-                    Some(config_copy.clone()),
-                );
-            }
-        };
-
-        match device.release_interface(0) {
-            Ok(a) => {
-                Logger::log(format!("Device released"), LoggerLevel::Debug, None);
-            }
-            Err(a) => {
-                GabinatorError::newUSB(
-                    format!("Cannot release the device, the device needs to be disconnected phisicaly: {a}"),
-                    LoggerLevel::Error,
-                    Some(config_copy.clone()),
-                );
-            }
-        };
+        copy.store(false, Ordering::SeqCst);
+        let device = clousure.lock().unwrap();
 
         match device.reset() {
             Ok(a) => {
@@ -202,13 +149,56 @@ pub fn connect_to_device(pid: u16, vid: u16) -> Result<GabinatorResult, Gabinato
             }
         };
 
-        copy.store(false, Ordering::SeqCst);
+        println!("Closed");
+        copy_stop.store(false, Ordering::SeqCst);
         return;
-    }).expect("ERRROR CTRLC");
+    })
+    .expect("ERRROR CTRLC");
 
-    find_bulk_endpoint(&device);
+    //TODO: Separate this into a public function (and for all devices)
+    let endpoint_data = match find_bulk_endpoint(&clone_device.lock().unwrap().device()) {
+        Some(a) => a,
+        None => {
+            error::GabinatorError::newUSB(
+                "Cannot find endpoint",
+                LoggerLevel::Critical,
+                Some(config.clone()),
+            );
+            return Err(GabinatorError::newUSB(
+                "Not able to find the bulk transfer endpoint",
+                LoggerLevel::Critical,
+                Some(config.clone()),
+            ));
+        }
+    };
 
-    while running.load(Ordering::SeqCst) {}
+    while running.load(Ordering::SeqCst) {
+        let device_new = clone_device.lock().unwrap();
+
+        //TODO: Separar en funcion
+        let data = match capture_screen() {
+            Ok(a) => a,
+            Err(a) => {
+                GabinatorError::newUSB(
+                    format!("Error capturing image: {a}"),
+                    LoggerLevel::Debug,
+                    Some(config.clone()),
+                );
+                continue;
+            }
+        };
+
+        match send_USB_data(&data, &device_new, endpoint_data.address) {
+            None => continue,
+            Some(a) => GabinatorError::newUSB(
+                format!("Not able to write bulk: {a}"),
+                LoggerLevel::Error,
+                Some(config.clone()),
+            ),
+        };
+    }
+
+    while stop_signal.load(Ordering::SeqCst) {}
     return Ok(GabinatorResult::newUSB(
         "Session succes",
         Some(config.clone()),
@@ -331,10 +321,10 @@ struct endpoint {
     address: u8,
 }
 
-fn find_bulk_endpoint(device: &DeviceHandle<GlobalContext>) -> Option<endpoint> {
-    let descriptor = device.device().device_descriptor().unwrap();
+fn find_bulk_endpoint(device: &Device<GlobalContext>) -> Option<endpoint> {
+    let descriptor = device.device_descriptor().unwrap();
     for e in 0..descriptor.num_configurations() {
-        let config = match device.device().config_descriptor(e) {
+        let config = match device.config_descriptor(e) {
             Ok(a) => a,
             Err(_) => {
                 continue;
@@ -401,7 +391,7 @@ pub fn prepare_accesory(handler: &DeviceHandle<GlobalContext>) -> Result<endpoin
         .device()
         .device_descriptor()
         .expect("No pudo obtener el descriptor");
-    let endpoint_data = match find_bulk_endpoint(&handler, descriptor) {
+    let endpoint_data = match find_bulk_endpoint(&handler.device()) {
         Some(a) => a,
         None => {
             error::GabinatorError::newUSB(

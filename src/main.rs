@@ -11,7 +11,7 @@ mod usb;
 use capture::capture_screen;
 use error::{Logger, LoggerLevel};
 use rusb::DeviceHandle;
-use usb::{capture_and_send, find_compatible_usb, prepare_accesory, send_capture_data};
+use usb::{capture_and_send, find_compatible_usb, prepare_accesory};
 mod tcp;
 fn main() {
     let config = Logger::get_config_content();
