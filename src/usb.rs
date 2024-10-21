@@ -1,4 +1,4 @@
-use core::time;
+use core::{fmt, time};
 use std::{
     alloc::GlobalAlloc,
     fmt::{format, Error},
@@ -91,15 +91,6 @@ pub fn connect_to_device(pid: u16, vid: u16) -> Result<GabinatorResult, Gabinato
             ))
         }
     };
-
-    /*match device.set_auto_detach_kernel_driver(true) {
-        Ok(a) => a,
-        Err(a) => Logger::log(
-            format!("Failed to detach kernel driver: {a}"),
-            LoggerLevel::Critical,
-            Some(config.clone()),
-        ),
-    } */
 
     let result = initialize_AOA_device(device);
     if result.is_err() {
@@ -205,7 +196,8 @@ pub fn connect_to_device(pid: u16, vid: u16) -> Result<GabinatorResult, Gabinato
     ));
 }
 
-fn try_to_open_AOA_device() -> Result<DeviceHandle<rusb::GlobalContext>, error::GabinatorError> {
+pub fn try_to_open_AOA_device() -> Result<DeviceHandle<rusb::GlobalContext>, error::GabinatorError>
+{
     let config = Logger::get_config_content();
     for _i in 0..10 {
         let value = open_device_with_vid_pid(0x18d1, 0x2d00);
@@ -307,21 +299,33 @@ fn get_AOA_version(
     return Ok(version_AOA);
 }
 
-fn initialize_AOA_device(device: DeviceHandle<rusb::GlobalContext>) -> Result<usize, rusb::Error> {
+pub fn initialize_AOA_device(
+    device: DeviceHandle<rusb::GlobalContext>,
+) -> Result<usize, rusb::Error> {
     match device.write_control(0x40, 53, 0, 0, &[0], Duration::from_secs(10)) {
         Ok(a) => Ok(a),
         Err(a) => Err(a),
     }
 }
 
-struct endpoint {
+pub struct endpoint {
     config: u8,
     interface: u8,
     setting: u8,
-    address: u8,
+    pub address: u8,
 }
 
-fn find_bulk_endpoint(device: &Device<GlobalContext>) -> Option<endpoint> {
+impl fmt::Display for endpoint {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(
+            f,
+            "CONFIG: {} INTERFACE: {} SETTING: {} ADDRESS: {}",
+            self.config, self.interface, self.setting, self.address
+        )
+    }
+}
+
+pub fn find_bulk_endpoint(device: &Device<GlobalContext>) -> Option<endpoint> {
     let descriptor = device.device_descriptor().unwrap();
     for e in 0..descriptor.num_configurations() {
         let config = match device.config_descriptor(e) {
@@ -360,49 +364,6 @@ pub fn capture_and_send(
         Err(a) => return Some(rusb::Error::Other),
     };
     send_USB_data(&data, handler, endpoint_data)
-}
-
-pub fn prepare_accesory(handler: &DeviceHandle<GlobalContext>) -> Result<endpoint, rusb::Error> {
-    let config = Logger::get_config_content();
-
-    if rusb::supports_detach_kernel_driver() {
-        if handler
-            .kernel_driver_active(0)
-            .expect("Error obteniendo estado de drivers")
-        {
-            println!("Kernel Drivers Active");
-            match handler.detach_kernel_driver(0) {
-                Ok(_) => println!("Kernel Drivers Detached"),
-                Err(a) => {
-                    dbg!(a);
-                    return Err(a);
-                }
-            }
-        }
-    }
-    match handler.claim_interface(0) {
-        Ok(_) => println!("Interface claimed"),
-        Err(a) => {
-            dbg!(a);
-            return Err(a);
-        }
-    }
-    let descriptor = handler
-        .device()
-        .device_descriptor()
-        .expect("No pudo obtener el descriptor");
-    let endpoint_data = match find_bulk_endpoint(&handler.device()) {
-        Some(a) => a,
-        None => {
-            error::GabinatorError::newUSB(
-                "Cannot find endpoint",
-                LoggerLevel::Critical,
-                Some(config),
-            );
-            return Err(rusb::Error::NotFound);
-        }
-    };
-    return Ok(endpoint_data);
 }
 
 pub fn send_USB_data(

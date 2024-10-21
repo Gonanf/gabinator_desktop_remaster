@@ -1,5 +1,6 @@
 use std::{
     collections::HashMap,
+    fmt,
     fs::File,
     io::{Read, Seek, SeekFrom, Write},
 };
@@ -156,6 +157,12 @@ pub enum GabinatorError {
     LoggerError(String),
 }
 
+impl fmt::Display for GabinatorError {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{:?}", self)
+    }
+}
+
 static DEBUG_MESSAGE: bool = true;
 //Make Connection error
 
@@ -205,6 +212,11 @@ pub enum GabinatorResult {
     LoggerResult(String),
 }
 
+impl fmt::Display for GabinatorResult {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{:?}", self)
+    }
+}
 impl GabinatorResult {
     pub fn newLogger<S: ToString>(message: S, config: Option<HashMap<String, String>>) -> Self {
         Logger::log(message.to_string(), LoggerLevel::Result, config);
