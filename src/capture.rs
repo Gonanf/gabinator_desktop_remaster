@@ -91,6 +91,7 @@ pub fn capture_screen() -> xcb::Result<Vec<u8>> {
     }
     let image = RgbaImage::from_raw(width.into(), height.into(), image_data.clone()).unwrap();
     let jpeg = turbojpeg::compress_image(&image, 25, turbojpeg::Subsamp::Sub2x2).unwrap();
+    dbg!(jpeg.len());
     return Ok(jpeg.as_ref().to_vec());
 }
 use crate::error;
