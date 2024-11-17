@@ -1,5 +1,5 @@
 #[cfg(target_os = "linux")]
-pub fn capture_screen() -> xcb::Result<Vec<u8>> {
+pub fn capture_screen(quality: u8) -> xcb::Result<Vec<u8>> {
     use std::u32;
 
     use image::RgbaImage;
@@ -16,8 +16,6 @@ pub fn capture_screen() -> xcb::Result<Vec<u8>> {
     let width = current_window.width_in_pixels() as u32;
     let height = current_window.height_in_pixels() as u32;
 
-    dbg!(width);
-    dbg!(height);
     let cookie_get_image = conn.send_request(&GetImage {
         format: x::ImageFormat::ZPixmap,
         drawable: x::Drawable::Window(current_window.root()),
@@ -92,13 +90,14 @@ pub fn capture_screen() -> xcb::Result<Vec<u8>> {
         }
     }
     let image = RgbaImage::from_raw(width.into(), height.into(), image_data.clone()).unwrap();
-    let jpeg = turbojpeg::compress_image(&image, 25, turbojpeg::Subsamp::Sub2x2).unwrap();
+    let jpeg = turbojpeg::compress_image(&image, quality.into(), turbojpeg::Subsamp::Sub2x2).unwrap();
+    dbg!(jpeg.len());
     return Ok(jpeg.as_ref().to_vec());
 }
 use crate::error;
 
 #[cfg(target_os = "windows")]
-pub fn capture_screen() -> Result<Vec<u8>, error::GabinatorError> {
+pub fn capture_screen(quality: u8) -> Result<Vec<u8>, error::GabinatorError> {
     use image::{
         codecs::{
             jpeg::{self, JpegEncoder},
@@ -213,7 +212,7 @@ pub fn capture_screen() -> Result<Vec<u8>, error::GabinatorError> {
         let encoding_time = Instant::now();
         let image = RgbImage::from_raw(width as u32, height as u32, buffer)
             .expect("Error convirtiendo en formato RGBA");
-        let jpeg = turbojpeg::compress_image(&image, 25, turbojpeg::Subsamp::Sub2x2).unwrap();
+        let jpeg = turbojpeg::compress_image(&image, quality.into(), turbojpeg::Subsamp::Sub2x2).unwrap();
         return Ok(jpeg.as_ref().to_vec());
     }
 }
