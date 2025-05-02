@@ -1,0 +1,134 @@
+
+
+----------------------------------------2025-05-01T20:43:07.766053390-03:00----------------------------------------
+
+
+[2025-05-01T20:43:07.766866427-03:00][LOG]Found parameter --vendor-id with value 1256
+[2025-05-01T20:43:07.767395249-03:00][LOG]Argument not found --verbose
+[2025-05-01T20:43:07.767958716-03:00][Error]not valid USB
+[2025-05-01T20:43:07.768077738-03:00][LOG]Found parameter --mode with value USB
+[2025-05-01T20:43:07.768607768-03:00][LOG]Found parameter --product-id with value 26720
+[2025-05-01T20:43:07.769160522-03:00][LOG]Argument not found --get-devices
+[2025-05-01T20:43:07.769712545-03:00][LOG]Argument not found --make-reciver
+[2025-05-01T20:43:07.770229442-03:00][LOG]Argument not found --test-tcp
+[2025-05-01T20:43:07.770775791-03:00][LOG]Argument not found --test-data
+[2025-05-01T20:43:07.771288126-03:00][LOG]Argument not found --quality
+[2025-05-01T20:43:07.771910035-03:00][LOG]Argument not found --connect
+[2025-05-01T20:43:07.772427283-03:00][LOG]Argument not found --get-endpoint
+[2025-05-01T20:43:07.772967468-03:00][LOG]Argument not found --send-frame
+
+
+----------------------------------------2025-05-01T20:44:24.134179484-03:00----------------------------------------
+
+
+[2025-05-01T20:44:24.134889351-03:00][LOG]Found parameter --vendor-id with value 1256
+[2025-05-01T20:44:24.135411032-03:00][LOG]Argument not found --verbose
+[2025-05-01T20:44:24.135945166-03:00][LOG]Found parameter --mode with value AOA
+[2025-05-01T20:44:24.136451387-03:00][LOG]Found parameter --product-id with value 26720
+[2025-05-01T20:44:24.136992006-03:00][LOG]Argument not found --get-devices
+[2025-05-01T20:44:24.137786500-03:00][LOG]Argument not found --make-reciver
+[2025-05-01T20:44:24.138518497-03:00][LOG]Argument not found --test-tcp
+[2025-05-01T20:44:24.139164310-03:00][LOG]Argument not found --test-data
+[2025-05-01T20:44:24.139738529-03:00][LOG]Argument not found --quality
+[2025-05-01T20:44:24.140368868-03:00][LOG]Argument not found --connect
+[2025-05-01T20:44:24.140948467-03:00][LOG]Argument not found --get-endpoint
+[2025-05-01T20:44:24.141517238-03:00][LOG]Argument not found --send-frame
+
+
+----------------------------------------2025-05-01T20:44:28.098430155-03:00----------------------------------------
+
+
+[2025-05-01T20:44:28.098618186-03:00][LOG]Found parameter --vendor-id with value 1256
+[2025-05-01T20:44:28.098720412-03:00][LOG]Argument not found --verbose
+[2025-05-01T20:44:28.098819228-03:00][LOG]Found parameter --mode with value AOA
+[2025-05-01T20:44:28.098917909-03:00][LOG]Found parameter --product-id with value 26720
+[2025-05-01T20:44:28.099018398-03:00][LOG]Argument not found --get-devices
+[2025-05-01T20:44:28.099139791-03:00][LOG]Argument not found --make-reciver
+[2025-05-01T20:44:28.099241101-03:00][LOG]Argument not found --test-tcp
+[2025-05-01T20:44:28.099357603-03:00][LOG]Argument not found --test-data
+[2025-05-01T20:44:28.099464524-03:00][LOG]Argument not found --quality
+[2025-05-01T20:44:28.099582404-03:00][LOG]Argument not found --connect
+[2025-05-01T20:44:28.099697253-03:00][LOG]Argument not found --get-endpoint
+[2025-05-01T20:44:28.099797662-03:00][LOG]Argument not found --send-frame
+
+
+----------------------------------------2025-05-01T20:44:30.864866557-03:00----------------------------------------
+
+
+[2025-05-01T20:44:30.865033399-03:00][LOG]Found parameter --vendor-id with value 1256
+[2025-05-01T20:44:30.865136283-03:00][LOG]Argument not found --verbose
+[2025-05-01T20:44:30.865237188-03:00][LOG]Found parameter --mode with value AOA
+[2025-05-01T20:44:30.865337802-03:00][LOG]Found parameter --product-id with value 26720
+[2025-05-01T20:44:30.865440868-03:00][LOG]Argument not found --get-devices
+[2025-05-01T20:44:30.865565033-03:00][LOG]Argument not found --make-reciver
+[2025-05-01T20:44:30.865679990-03:00][LOG]Argument not found --test-tcp
+[2025-05-01T20:44:30.865779655-03:00][LOG]Argument not found --test-data
+[2025-05-01T20:44:30.865900036-03:00][LOG]Argument not found --quality
+[2025-05-01T20:44:30.866001291-03:00][LOG]Argument not found --connect
+[2025-05-01T20:44:30.866100840-03:00][LOG]Argument not found --get-endpoint
+[2025-05-01T20:44:30.866206901-03:00][LOG]Argument not found --send-frame
+
+
+----------------------------------------2025-05-01T20:44:36.324993610-03:00----------------------------------------
+
+
+[2025-05-01T20:44:36.325159034-03:00][LOG]Found parameter --vendor-id with value 1256
+[2025-05-01T20:44:36.325260899-03:00][LOG]Argument not found --verbose
+[2025-05-01T20:44:36.325360495-03:00][LOG]Found parameter --mode with value AOA
+[2025-05-01T20:44:36.325465175-03:00][LOG]Found parameter --product-id with value 26720
+[2025-05-01T20:44:36.325574446-03:00][LOG]Argument not found --get-devices
+[2025-05-01T20:44:36.325714081-03:00][LOG]Argument not found --make-reciver
+[2025-05-01T20:44:36.325818950-03:00][LOG]Argument not found --test-tcp
+[2025-05-01T20:44:36.325948433-03:00][LOG]Argument not found --test-data
+[2025-05-01T20:44:36.326084933-03:00][LOG]Argument not found --quality
+[2025-05-01T20:44:36.326205880-03:00][LOG]Argument not found --connect
+[2025-05-01T20:44:36.326315815-03:00][LOG]Argument not found --get-endpoint
+[2025-05-01T20:44:36.326438195-03:00][LOG]Argument not found --send-frame
+
+
+----------------------------------------2025-05-01T20:44:39.573388654-03:00----------------------------------------
+
+
+[2025-05-01T20:44:39.574087970-03:00][LOG]Found parameter --vendor-id with value 1256
+[2025-05-01T20:44:39.574609737-03:00][LOG]Argument not found --verbose
+[2025-05-01T20:44:39.575110832-03:00][LOG]Found parameter --mode with value AOA
+[2025-05-01T20:44:39.575621677-03:00][LOG]Found parameter --product-id with value 26720
+[2025-05-01T20:44:39.576191352-03:00][LOG]Argument not found --get-devices
+[2025-05-01T20:44:39.576773585-03:00][LOG]Argument not found --make-reciver
+[2025-05-01T20:44:39.577270583-03:00][LOG]Argument not found --test-tcp
+[2025-05-01T20:44:39.577822537-03:00][LOG]Argument not found --test-data
+[2025-05-01T20:44:39.578324883-03:00][LOG]Argument not found --quality
+[2025-05-01T20:44:39.578850386-03:00][LOG]Argument not found --connect
+[2025-05-01T20:44:39.579456893-03:00][LOG]Argument not found --get-endpoint
+[2025-05-01T20:44:39.580080208-03:00][LOG]Argument not found --send-frame
+
+
+----------------------------------------2025-05-01T20:44:47.069401694-03:00----------------------------------------
+
+
+[2025-05-01T20:44:47.069559068-03:00][LOG]Argument not found --vendor-id
+[2025-05-01T20:44:47.069660614-03:00][LOG]Argument not found --verbose
+[2025-05-01T20:44:47.069758700-03:00][LOG]Found parameter --mode with value TCP
+[2025-05-01T20:44:47.069864100-03:00][LOG]Argument not found --product-id
+[2025-05-01T20:44:47.069993790-03:00][LOG]Argument not found --get-devices
+[2025-05-01T20:44:47.070118727-03:00][LOG]Argument not found --make-reciver
+[2025-05-01T20:44:47.070235437-03:00][LOG]Argument not found --test-tcp
+[2025-05-01T20:44:47.070334556-03:00][LOG]Argument not found --test-data
+[2025-05-01T20:44:47.070430840-03:00][LOG]Argument not found --quality
+[2025-05-01T20:44:47.070545924-03:00][LOG]Argument not found --connect
+[2025-05-01T20:44:47.070644417-03:00][LOG]Argument not found --get-endpoint
+[2025-05-01T20:44:47.070740084-03:00][LOG]Argument not found --send-frame
+
+
+----------------------------------------2025-05-01T20:44:50.869683658-03:00----------------------------------------
+
+
+[2025-05-01T20:44:50.870376081-03:00][LOG]Argument not found --vendor-id
+[2025-05-01T20:44:50.871087624-03:00][LOG]Argument not found --verbose
+[2025-05-01T20:44:50.871614613-03:00][LOG]Found parameter --mode with value TCP
+[2025-05-01T20:44:50.872113275-03:00][LOG]Argument not found --product-id
+[2025-05-01T20:44:50.872635651-03:00][LOG]Argument not found --get-devices
+[2025-05-01T20:44:50.873130139-03:00][LOG]Argument not found --make-reciver
+[2025-05-01T20:44:50.873774871-03:00][LOG]Argument not found --test-tcp
+[2025-05-01T20:44:50.874274950-03:00][LOG]Argument not found --test-data
+[2025-05-01T20:44:50.874903222-03:00][LOG]Argument not found --quality
