@@ -1,3 +1,4 @@
 /target
 ./log.txt
 ./gabinator_config.toml
+./.vscode
