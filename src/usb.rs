@@ -1,26 +1,26 @@
 use core::{fmt, time};
 use std::{
-    alloc::GlobalAlloc,
-    fmt::{format, Error},
-    ops::Deref,
-    ptr::{null, null_mut},
     sync::{
         atomic::{AtomicBool, Ordering},
         Arc, Mutex,
     },
     thread::sleep,
-    time::{Duration, Instant},
+    time::{Duration},
 };
 
 use crate::{
     capture::capture_screen,
     error::{self, GabinatorError, GabinatorResult, Logger, LoggerLevel},
 };
-use config::Config;
+
+
 use rusb::{
     self, open_device_with_vid_pid, Device, DeviceDescriptor, DeviceHandle, Direction,
-    GlobalContext, LogLevel, TransferType,
+    GlobalContext, TransferType,DeviceList, Recipient, RequestType,request_type,
 };
+use byteorder::{ByteOrder, LittleEndian};
+use crate::mod_aoa::*;
+
 
 //Finds and returns the AOA Compatible devices
 pub fn find_compatible_usb<'a>(
@@ -28,24 +28,29 @@ pub fn find_compatible_usb<'a>(
 ) -> Result<Vec<Device<rusb::GlobalContext>>, error::GabinatorError> {
     let config = Logger::get_config_content();
     let devices = rusb::devices();
+
     let mut compatible_devices: Vec<Device<rusb::GlobalContext>> = Vec::new();
-    if devices.is_err() {
+   if devices.is_err() {
         return Err(error::GabinatorError::newUSB(
             "Failed to get devices",
             error::LoggerLevel::Error,
             Some(config.clone()),
         ));
     }
-    for device in devices.unwrap().iter() {
+
+
+    for device in devices.unwrap().iter(){
         let descriptor: rusb::DeviceDescriptor = device.device_descriptor().unwrap();
+        
 
         Logger::log(
             format!(
-                "Bus {:03} Device {:03} ID {:04x}:{:04x}",
+                "--LOGBus {:03} Device {:03} ID {:04x}:{:04x}",
                 device.bus_number(),
                 device.address(),
                 descriptor.vendor_id(),
-                descriptor.product_id()
+                descriptor.product_id(),
+                
             ),
             LoggerLevel::Info,
             Some(config.clone()),
@@ -62,17 +67,24 @@ pub fn find_compatible_usb<'a>(
                 continue;
             }
         };
-        let result = is_in_AOA(&device_handle, descriptor);
-        if result.is_some() {
+        let result = is_in_AOA(&device_handle, &descriptor);
+        if result.is_none() {
             if !ignore_already_initialized {
                 compatible_devices.push(device);
                 continue;
             }
         };
 
-        let result = get_AOA_version(&device_handle);
+        let result: Result<u8,GabinatorError> = get_AOA_version(&device_handle);
         if result.is_ok() {
-            compatible_devices.push(device);
+            println!(
+                    "Bus {:03} Device {:03} VID {} PID {} AOA Version {}",
+                    device.bus_number(),
+                    device.address(),
+                    descriptor.vendor_id(),
+                    descriptor.product_id(),
+                    result.unwrap(),
+            );
             continue;
         };
     }
@@ -244,7 +256,7 @@ pub fn try_to_open_AOA_device() -> Result<DeviceHandle<rusb::GlobalContext>, err
 
 fn is_in_AOA(
     device: &DeviceHandle<rusb::GlobalContext>,
-    descriptor: DeviceDescriptor,
+    descriptor: &DeviceDescriptor,
 ) -> Option<error::GabinatorError> {
     let config = Logger::get_config_content();
     if descriptor.vendor_id() != 0x18d1 {
@@ -296,16 +308,132 @@ fn get_AOA_version(
             Some(config),
         ));
     }
+    Logger::log(
+        format!("A0A: {}",version_AOA),
+        LoggerLevel::Debug,
+        Some(config.clone()),
+    );
     return Ok(version_AOA);
 }
 
 pub fn initialize_AOA_device(
     device: DeviceHandle<rusb::GlobalContext>,
 ) -> Result<usize, rusb::Error> {
-    match device.write_control(0x40, 53, 0, 0, &[0], Duration::from_secs(10)) {
-        Ok(a) => Ok(a),
-        Err(a) => Err(a),
-    }
+    device.claim_interface(0)?;
+
+    device.write_control(
+
+        request_type(Direction::Out, RequestType::Vendor, Recipient::Device),
+
+        ACCESSORY_SEND_STRING,
+
+        0,
+
+        ACCESSORY_STRING_MANUFACTURER,
+
+        "Chaos".as_bytes(),
+
+        Duration::from_secs(10),
+
+    )?;
+
+    device.write_control(
+
+        request_type(Direction::Out, RequestType::Vendor, Recipient::Device),
+
+        ACCESSORY_SEND_STRING,
+
+        0,
+
+        ACCESSORY_STRING_MODEL,
+
+        "EEST".as_bytes(),
+
+        Duration::from_secs(10),
+
+    )?;
+
+    device.write_control(
+
+        request_type(Direction::Out, RequestType::Vendor, Recipient::Device),
+
+        ACCESSORY_SEND_STRING,
+
+        0,
+
+        ACCESSORY_STRING_DESCRIPTION,
+
+        "Gabinator".as_bytes(),
+
+        Duration::from_secs(10),
+
+    )?;
+
+
+
+    device.write_control(
+
+        request_type(Direction::Out, RequestType::Vendor, Recipient::Device),
+
+        ACCESSORY_SEND_STRING,
+
+        0,
+
+        ACCESSORY_STRING_VERSION,
+
+        "1.0".as_bytes(),
+
+        Duration::from_secs(10),
+
+    )?;
+
+    device.write_control(
+
+        request_type(Direction::Out, RequestType::Vendor, Recipient::Device),
+
+        ACCESSORY_SEND_STRING,
+
+        0,
+
+        ACCESSORY_STRING_URI,
+
+        "https://gonanf.github.io/Gabinator".as_bytes(),
+
+        Duration::from_secs(10),
+
+    )?;
+
+    device.write_control(
+
+        request_type(Direction::Out, RequestType::Vendor, Recipient::Device),
+
+        ACCESSORY_SEND_STRING,
+
+        0,
+
+        ACCESSORY_STRING_SERIAL,
+
+        "https://gonanf.github.io/Gabinator".as_bytes(),
+
+        Duration::from_secs(10),
+
+    )?;
+
+    return device.write_control(
+
+        request_type(Direction::Out, RequestType::Vendor, Recipient::Device),
+
+        ACCESSORY_START,
+
+        0,
+
+        0,
+
+        &[],
+
+        Duration::from_secs(10),
+
+    );
 }
 
 pub struct endpoint {

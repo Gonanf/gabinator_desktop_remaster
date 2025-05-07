@@ -4,7 +4,6 @@ pub fn capture_screen(quality: u8) -> xcb::Result<Vec<u8>> {
 
     use image::RgbaImage;
     use xcb::{
-        randr,
         x::{self, GetImage, ImageOrder},
         Connection,
     };
@@ -94,7 +93,6 @@ pub fn capture_screen(quality: u8) -> xcb::Result<Vec<u8>> {
     dbg!(jpeg.len());
     return Ok(jpeg.as_ref().to_vec());
 }
-use crate::error;
 
 #[cfg(target_os = "windows")]
 pub fn capture_screen(quality: u8) -> Result<Vec<u8>, error::GabinatorError> {

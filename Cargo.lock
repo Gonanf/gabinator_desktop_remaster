@@ -457,6 +457,7 @@ dependencies = [
 name = "gabinator_desktop_r"
 version = "0.1.0"
 dependencies = [
+ "byteorder",
  "chrono",
  "config",
  "ctrlc",
@@ -464,6 +465,7 @@ dependencies = [
  "local-ip-address",
  "rusb",
  "sysinfo",
+ "thiserror 2.0.12",
  "turbojpeg",
  "windows 0.58.0",
  "xcb",

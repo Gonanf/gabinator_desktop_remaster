@@ -1,1 +1,5 @@
-on_info = "warn"
+on_info = "debug"
+on_warning = "debug"
+on_error = "debug"
+on_critical = "debug"
+on_debug = "debug"

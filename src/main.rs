@@ -1,9 +1,11 @@
 use std::{
-    env, io::{stdin, Read}, thread, time::Instant, u8, usize
+    env,
+    u8,
 };
 mod capture;
 pub mod error;
 mod usb;
+mod mod_aoa;
 use capture::capture_screen;
 use error::{GabinatorError, Logger, LoggerLevel};
 use rusb::{DeviceHandle, GlobalContext};
@@ -28,6 +30,30 @@ fn main() {
     let mut test_tcp = false;
     let mut test_data = false;
     let mut quality = 25;
+
+    parse_arg(
+        &args,
+        "-h".to_string(),
+        "--help".to_string(),
+        true,
+        |a: &String| {
+            //println!("VID: {}", a);
+            println!(
+                "This is the server for the Gabinator Proyect, here you can connect with the device by using the AOA or TCP protocol.\n
+                    Parameters:\n
+                    -G / --get-devices: Prints the compatible devices with AOA\n
+                    -V / --vendor-id: Set the vendor ID to use with AOA\n
+                    -P / --product-id: Set the Product ID to use with AOA\n
+                    -v / --verbose: Allow info / debug prints\n
+                    -h / --help: Print this message\n
+                    -M / --mode: Set the mode, it can be AOA or TCP\n
+                    -Q / --quality: Set the quality of the image\n 
+                    -C / --connect: Start the server\n");
+
+            true
+        },
+    );
+
     parse_arg(
         &args,
         "-V".to_string(),
@@ -56,7 +82,6 @@ fn main() {
         "--verbose".to_string(),
         false,
         |a: &String| {
-            //println!("VID: {}", a);
             verbose = true;
             true
         },
@@ -131,15 +156,9 @@ fn main() {
         false,
         |_a: &String| match usb::find_compatible_usb(false) {
             Ok(a) => {
-                for i in a {
                     println!(
-                        "DEVICE {:03} ADDRESS {:03} PID {:?} VID {:?}",
-                        i.bus_number(),
-                        i.address(),
-                        i.device_descriptor().unwrap().product_id(),
-                        i.device_descriptor().unwrap().vendor_id(),
+                        "Done"
                     );
-                }
                 true
             }
             Err(a) => return false,
@@ -158,7 +177,6 @@ fn main() {
             return true;
         },
     );
-
 
     //DEBUG ONLY
     parse_arg(
@@ -192,14 +210,18 @@ fn main() {
         |a: &String| -> bool {
             quality = match a.parse::<u8>() {
                 Ok(b) => b,
-                Err(b) => {GabinatorError::newMain(format!("Not a valid quality parameter {b}"), LoggerLevel::Error, Some(config.clone()));
-             quality}
+                Err(b) => {
+                    GabinatorError::newMain(
+                        format!("Not a valid quality parameter {b}"),
+                        LoggerLevel::Error,
+                        Some(config.clone()),
+                    );
+                    quality
+                }
             };
             return true;
         },
     );
-
-
 
     //Connect to the device and send capture
     parse_arg(
@@ -211,7 +233,7 @@ fn main() {
             match mode {
                 0 => {
                     if vid > 0 && pid > 0 {
-                        match usb::connect_to_device(pid, vid,quality) {
+                        match usb::connect_to_device(pid, vid, quality) {
                             Ok(a) => Logger::log(
                                 format!("Connected"),
                                 LoggerLevel::Info,
@@ -227,7 +249,7 @@ fn main() {
                 }
 
                 1 => {
-                    tcp::start_server(test_tcp,test_data,quality);
+                    tcp::start_server(test_tcp, test_data, quality);
                 }
 
                 _ => panic!("NOT VALID MODE"),
@@ -284,7 +306,7 @@ fn main() {
         false,
         |a: &String| -> bool {
             if pid > 0 && vid > 0 && endpoint > 0 && device.is_some() {
-                match usb::capture_and_send(&device.as_mut().unwrap(), endpoint,quality) {
+                match usb::capture_and_send(&device.as_mut().unwrap(), endpoint, quality) {
                     Some(a) => {
                         let _b = GabinatorError::newMain(
                             "Error sending image {a}",

@@ -1,10 +1,10 @@
 use std::{
     collections::HashMap,
     fs::File,
-    io::{Read, Seek, SeekFrom, Write},
+    io::{Seek, SeekFrom, Write},
 };
 
-use config::{Config, ConfigError};
+use config::{Config};
 
 pub enum LoggerLevel {
     Info,
@@ -46,6 +46,7 @@ impl Logger {
             ("on_result".to_string(), "warn".to_string()),
             ("on_error".to_string(), "warn".to_string()),
             ("on_critical".to_string(), "panic".to_string()),
+            ("on_debug".to_string(), "none".to_string()),
             ("IP".to_string(), "127.0.0.1".to_string()),
             ("port".to_string(), "3000".to_string()),
         ]);
@@ -105,7 +106,7 @@ impl Logger {
                         Self::append_file_content(message.as_str());
                     }
                     "debug" => {
-                        Self::append_file_content(message.as_str());
+                        //Self::append_file_content(message.as_str());
                         println!("{message}");
                     }
                     _ => return,
